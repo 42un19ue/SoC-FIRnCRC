@@ -1,0 +1,8 @@
+module FIR_SoC(
+	input	CLOCK_50,
+	input	[0:0] KEY
+);
+
+
+
+endmodule

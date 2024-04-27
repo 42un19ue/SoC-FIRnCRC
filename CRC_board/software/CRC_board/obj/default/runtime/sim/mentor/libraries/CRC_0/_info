@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/FPTSHOP/Desktop/CRC/CRC_board/software/CRC_board/obj/default/runtime/sim/mentor
+vCRC
+Z1 !s110 1704631221
+!i10b 1
+!s100 _D@:CBdU8_hWThlaYZ7SU3
+IXoam1MT1?S4[D:_cm7AFj0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1704630950
+8C:/Users/FPTSHOP/Desktop/CRC/CRC_board/system/testbench/system_tb/simulation/submodules/CRC.v
+FC:/Users/FPTSHOP/Desktop/CRC/CRC_board/system/testbench/system_tb/simulation/submodules/CRC.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1704631221.000000
+!s107 C:/Users/FPTSHOP/Desktop/CRC/CRC_board/system/testbench/system_tb/simulation/submodules/CRC.v|
+!s90 -reportprogress|300|C:/Users/FPTSHOP/Desktop/CRC/CRC_board/system/testbench/system_tb/simulation/submodules/CRC.v|-work|CRC_0|
+!i113 1
+Z6 o-work CRC_0
+Z7 tCvgOpt 0
+n@c@r@c
+vCRC_Slave
+R1
+!i10b 1
+!s100 alhXQDmm420blQ;K[ZTH=1
+IT2@:dGl3lcCVnOmALI:2A2
+R2
+R0
+R3
+8C:/Users/FPTSHOP/Desktop/CRC/CRC_board/system/testbench/system_tb/simulation/submodules/CRC_Slave.v
+FC:/Users/FPTSHOP/Desktop/CRC/CRC_board/system/testbench/system_tb/simulation/submodules/CRC_Slave.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/FPTSHOP/Desktop/CRC/CRC_board/system/testbench/system_tb/simulation/submodules/CRC_Slave.v|
+!s90 -reportprogress|300|C:/Users/FPTSHOP/Desktop/CRC/CRC_board/system/testbench/system_tb/simulation/submodules/CRC_Slave.v|-work|CRC_0|
+!i113 1
+R6
+R7
+n@c@r@c_@slave

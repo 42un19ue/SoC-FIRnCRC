@@ -1,0 +1,3014 @@
+
+RUN_ON_HDL_SIMULATOR_ONLY_CRC_board.elf:     file format elf32-littlenios2
+RUN_ON_HDL_SIMULATOR_ONLY_CRC_board.elf
+architecture: nios2:r1, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00008020
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00008000 paddr 0x00008000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00001020 vaddr 0x00008020 paddr 0x00008020 align 2**12
+         filesz 0x00001d4c memsz 0x00001d4c flags r-x
+    LOAD off    0x00002d6c vaddr 0x00009d6c paddr 0x0000a040 align 2**12
+         filesz 0x000002d4 memsz 0x000002d4 flags rw-
+    LOAD off    0x00003314 vaddr 0x0000a314 paddr 0x0000a314 align 2**12
+         filesz 0x00000000 memsz 0x00000010 flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00008000  00008000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .exceptions   00000000  00008020  00008020  00003040  2**0
+                  CONTENTS
+  2 .text         00001d04  00008020  00008020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .rodata       00000048  00009d24  00009d24  00002d24  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .rwdata       000002d4  00009d6c  0000a040  00002d6c  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  5 .bss          00000010  0000a314  0000a314  00003314  2**2
+                  ALLOC, SMALL_DATA
+  6 .onchip_memory2_0 00000000  0000a324  0000a324  00003040  2**0
+                  CONTENTS
+  7 .comment      00000023  00000000  00000000  00003040  2**0
+                  CONTENTS, READONLY
+  8 .debug_aranges 000004e8  00000000  00000000  00003068  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_info   00006cb5  00000000  00000000  00003550  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_abbrev 00002413  00000000  00000000  0000a205  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_line   00002891  00000000  00000000  0000c618  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_frame  0000096c  00000000  00000000  0000eeac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    00001665  00000000  00000000  0000f818  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_loc    00001543  00000000  00000000  00010e7d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_ranges 00000228  00000000  00000000  000123c0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .thread_model 00000003  00000000  00000000  00013c1a  2**0
+                  CONTENTS, READONLY
+ 17 .cpu          0000000c  00000000  00000000  00013c1d  2**0
+                  CONTENTS, READONLY
+ 18 .qsys         00000001  00000000  00000000  00013c29  2**0
+                  CONTENTS, READONLY
+ 19 .simulation_enabled 00000001  00000000  00000000  00013c2a  2**0
+                  CONTENTS, READONLY
+ 20 .stderr_dev   0000000b  00000000  00000000  00013c2b  2**0
+                  CONTENTS, READONLY
+ 21 .stdin_dev    0000000b  00000000  00000000  00013c36  2**0
+                  CONTENTS, READONLY
+ 22 .stdout_dev   0000000b  00000000  00000000  00013c41  2**0
+                  CONTENTS, READONLY
+ 23 .sopc_system_name 00000006  00000000  00000000  00013c4c  2**0
+                  CONTENTS, READONLY
+ 24 .quartus_project_dir 00000026  00000000  00000000  00013c52  2**0
+                  CONTENTS, READONLY
+ 25 .jdi          000063ed  00000000  00000000  00013c78  2**0
+                  CONTENTS, READONLY
+ 26 .sopcinfo     00031b2d  00000000  00000000  0001a065  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00008000 l    d  .entry	00000000 .entry
+00008020 l    d  .exceptions	00000000 .exceptions
+00008020 l    d  .text	00000000 .text
+00009d24 l    d  .rodata	00000000 .rodata
+00009d6c l    d  .rwdata	00000000 .rwdata
+0000a314 l    d  .bss	00000000 .bss
+0000a324 l    d  .onchip_memory2_0	00000000 .onchip_memory2_0
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 ../CRC_board_bsp//obj/HAL/src/crt0.o
+00008038 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 hello_world.c
+00000000 l    df *ABS*	00000000 printf.c
+00000000 l    df *ABS*	00000000 vfprintf.c
+0000815c l     F .text	0000006c print_repeat
+00000000 l    df *ABS*	00000000 fvwrite_small_dev.c
+00000000 l    df *ABS*	00000000 impure.c
+00009d6c l     O .rwdata	000000e0 impure_data
+00000000 l    df *ABS*	00000000 strlen.c
+00000000 l    df *ABS*	00000000 writer.c
+00000000 l    df *ABS*	00000000 int_errno.c
+00000000 l    df *ABS*	00000000 lib2-divmod.c
+00000000 l    df *ABS*	00000000 lib2-mul.c
+00000000 l    df *ABS*	00000000 alt_load.c
+00008a18 l     F .text	00000068 alt_load_section
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_write.c
+00008b80 l     F .text	0000003c alt_get_errno
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00008cbc l     F .text	00000034 alt_dev_reg
+00009e4c l     O .rwdata	0000002c jtag_uart_0
+00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_fd.c
+00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_read.c
+00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_write.c
+00000000 l    df *ABS*	00000000 alt_close.c
+00008f9c l     F .text	0000003c alt_get_errno
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_dev.c
+000090d0 l     F .text	0000002c alt_dev_null_write
+00000000 l    df *ABS*	00000000 alt_dev_llist_insert.c
+000090fc l     F .text	0000003c alt_get_errno
+00000000 l    df *ABS*	00000000 alt_do_ctors.c
+00000000 l    df *ABS*	00000000 alt_do_dtors.c
+00000000 l    df *ABS*	00000000 alt_errno.c
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_io_redirect.c
+000092bc l     F .text	000000e4 alt_open_fd
+00000000 l    df *ABS*	00000000 alt_open.c
+0000941c l     F .text	0000003c alt_get_errno
+00009458 l     F .text	000000ec alt_file_locked
+00000000 l    df *ABS*	00000000 alt_release_fd.c
+00000000 l    df *ABS*	00000000 altera_nios2_gen2_irq.c
+00000000 l    df *ABS*	00000000 alt_find_dev.c
+00000000 l    df *ABS*	00000000 alt_find_file.c
+00000000 l    df *ABS*	00000000 alt_get_fd.c
+00000000 l    df *ABS*	00000000 atexit.c
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 memcmp.c
+00000000 l    df *ABS*	00000000 __atexit.c
+00000000 l    df *ABS*	00000000 __call_atexit.c
+00000000 l    df *ABS*	00000000 alt_exit.c
+00008b04 g     F .text	0000007c alt_main
+0000a040 g       *ABS*	00000000 __flash_rwdata_start
+00008110 g     F .text	0000004c printf
+00009724 g     F .text	00000024 altera_nios2_gen2_irq_init
+00008000 g     F .entry	0000000c __reset
+00008020 g       *ABS*	00000000 __flash_exceptions_start
+0000a314 g     O .bss	00000004 errno
+0000a31c g     O .bss	00000004 alt_argv
+00012020 g       *ABS*	00000000 _gp
+00009ea0 g     O .rwdata	00000180 alt_fd_list
+00009748 g     F .text	00000090 alt_find_dev
+000093a0 g     F .text	0000007c alt_io_redirect
+00009d24 g       *ABS*	00000000 __DTOR_END__
+00008e1c g     F .text	000000ec altera_avalon_jtag_uart_read
+000080d4 g     F .text	0000003c _printf_r
+00008000 g       *ABS*	00000000 __alt_mem_onchip_memory2_0
+00008934 g     F .text	00000064 .hidden __udivsi3
+0000a038 g     O .rwdata	00000004 alt_max_fd
+0000a020 g     O .rwdata	00000004 _global_impure_ptr
+0000a324 g       *ABS*	00000000 __bss_end
+00009e78 g     O .rwdata	00000028 alt_dev_null
+000090b0 g     F .text	00000020 alt_dcache_flush_all
+0000a040 g       *ABS*	00000000 __ram_rwdata_end
+0000a030 g     O .rwdata	00000008 alt_dev_list
+00008bbc g     F .text	00000100 write
+00009d6c g       *ABS*	00000000 __ram_rodata_end
+00008998 g     F .text	00000058 .hidden __umodsi3
+0000a324 g       *ABS*	00000000 end
+00009d24 g       *ABS*	00000000 __CTOR_LIST__
+00010000 g       *ABS*	00000000 __alt_stack_pointer
+00008f08 g     F .text	00000094 altera_avalon_jtag_uart_write
+000081c8 g     F .text	0000052c ___vfprintf_internal_r
+00009b60 g     F .text	00000190 __call_exitprocs
+00008020 g     F .text	0000001c _start
+00008d28 g     F .text	00000034 alt_sys_init
+00009a08 g     F .text	00000158 __register_exitproc
+000089f0 g     F .text	00000028 .hidden __mulsi3
+00009d6c g       *ABS*	00000000 __ram_rwdata_start
+00009d24 g       *ABS*	00000000 __ram_rodata_start
+00008d5c g     F .text	00000060 altera_avalon_jtag_uart_read_fd
+000098e0 g     F .text	000000c4 alt_get_fd
+000099d8 g     F .text	00000030 memcmp
+0000a324 g       *ABS*	00000000 __alt_stack_base
+000097d8 g     F .text	00000108 alt_find_file
+00009138 g     F .text	000000a4 alt_dev_llist_insert
+00008710 g     F .text	000000b8 __sfvwrite_small_dev
+0000a314 g       *ABS*	00000000 __bss_start
+0000803c g     F .text	00000098 main
+0000a320 g     O .bss	00000004 alt_envp
+00008dbc g     F .text	00000060 altera_avalon_jtag_uart_write_fd
+0000a03c g     O .rwdata	00000004 alt_errno
+0000883c g     F .text	00000084 .hidden __divsi3
+00009d24 g       *ABS*	00000000 __CTOR_END__
+00009d24 g       *ABS*	00000000 __flash_rodata_start
+00009d24 g       *ABS*	00000000 __DTOR_LIST__
+00008cf0 g     F .text	00000038 alt_irq_init
+000096a0 g     F .text	00000084 alt_release_fd
+000099a4 g     F .text	00000014 atexit
+000087e4 g     F .text	00000058 _write_r
+0000a024 g     O .rwdata	00000004 _impure_ptr
+0000a318 g     O .bss	00000004 alt_argc
+0000923c g     F .text	00000060 _do_dtors
+0000a028 g     O .rwdata	00000008 alt_fs_list
+00008020 g       *ABS*	00000000 __ram_exceptions_start
+0000a040 g       *ABS*	00000000 _edata
+0000a324 g       *ABS*	00000000 _end
+00008020 g       *ABS*	00000000 __ram_exceptions_end
+000099b8 g     F .text	00000020 exit
+000088c0 g     F .text	00000074 .hidden __modsi3
+00010000 g       *ABS*	00000000 __alt_data_end
+00009cf0 g     F .text	00000034 _exit
+000087c8 g     F .text	0000001c strlen
+00009544 g     F .text	0000015c open
+0000929c g     F .text	00000020 alt_icache_flush_all
+000086f4 g     F .text	0000001c __vfprintf_internal
+000091dc g     F .text	00000060 _do_ctors
+00008fd8 g     F .text	000000d8 close
+00008a80 g     F .text	00000084 alt_load
+
+
+
+Disassembly of section .entry:
+
+00008000 <__reset>:
+ * Jump to the _start entry point in the .text section if reset code
+ * is allowed or if optimizing for RTL simulation.
+ */
+#if defined(ALT_ALLOW_CODE_AT_RESET) || defined(ALT_SIM_OPTIMIZE)
+    /* Jump to the _start entry point in the .text section. */
+    movhi r1, %hi(_start)
+    8000:	00400034 	movhi	at,0
+    ori r1, r1, %lo(_start)
+    8004:	08600814 	ori	at,at,32800
+    jmp r1
+    8008:	0800683a 	jmp	at
+	...
+
+Disassembly of section .text:
+
+00008020 <_start>:
+
+    /*
+     * Now that the caches are initialized, set up the stack pointer and global pointer.
+     * The values provided by the linker are assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+    8020:	06c00074 	movhi	sp,1
+    ori sp, sp, %lo(__alt_stack_pointer)
+    8024:	dec00014 	ori	sp,sp,0
+    movhi gp, %hi(_gp)
+    8028:	06800074 	movhi	gp,1
+    ori gp, gp, %lo(_gp)
+    802c:	d6880814 	ori	gp,gp,8224
+     * section aren't defined until alt_load() has been called).
+     */
+    mov   et, zero
+#endif
+
+    call alt_load
+    8030:	0008a800 	call	8a80 <alt_load>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+    8034:	0008b040 	call	8b04 <alt_main>
+
+00008038 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+    8038:	003fff06 	br	8038 <_gp+0xffff6018>
+
+0000803c <main>:
+#include "system.h"
+#include "sys/alt_stdio.h"
+
+int main()
+{
+    803c:	defffc04 	addi	sp,sp,-16
+    8040:	dfc00315 	stw	ra,12(sp)
+    8044:	df000215 	stw	fp,8(sp)
+    8048:	df000204 	addi	fp,sp,8
+//  volatile long* c_ptr = (long*)CRC_0_BASE;
+//  long c;
+//  *(c_ptr) = 0x12345;
+//  c = *(c_ptr + 1);
+//  alt_putstr("Hello");
+  int y = 0;
+    804c:	e03ffe15 	stw	zero,-8(fp)
+  int* c_ptr = (int*)CRC_0_BASE;
+    8050:	00800074 	movhi	r2,1
+    8054:	10840004 	addi	r2,r2,4096
+    8058:	e0bfff15 	stw	r2,-4(fp)
+
+  *(c_ptr + 0) = 0x12345678;
+    805c:	e0ffff17 	ldw	r3,-4(fp)
+    8060:	00848d34 	movhi	r2,4660
+    8064:	10959e04 	addi	r2,r2,22136
+    8068:	18800015 	stw	r2,0(r3)
+  *(c_ptr + 1) = 0;
+    806c:	e0bfff17 	ldw	r2,-4(fp)
+    8070:	10800104 	addi	r2,r2,4
+    8074:	10000015 	stw	zero,0(r2)
+  *(c_ptr + 1) = 1;
+    8078:	e0bfff17 	ldw	r2,-4(fp)
+    807c:	10800104 	addi	r2,r2,4
+    8080:	00c00044 	movi	r3,1
+    8084:	10c00015 	stw	r3,0(r2)
+
+  while(*(c_ptr + 2) != 1){
+    8088:	0001883a 	nop
+    808c:	e0bfff17 	ldw	r2,-4(fp)
+    8090:	10800204 	addi	r2,r2,8
+    8094:	10800017 	ldw	r2,0(r2)
+    8098:	10800058 	cmpnei	r2,r2,1
+    809c:	103ffb1e 	bne	r2,zero,808c <_gp+0xffff606c>
+    };						//timing khi nao done = 1
+  y = *(c_ptr + 1);
+    80a0:	e0bfff17 	ldw	r2,-4(fp)
+    80a4:	10800117 	ldw	r2,4(r2)
+    80a8:	e0bffe15 	stw	r2,-8(fp)
+  printf("CRC result: %d \n",y);
+    80ac:	e17ffe17 	ldw	r5,-8(fp)
+    80b0:	01000074 	movhi	r4,1
+    80b4:	21274904 	addi	r4,r4,-25308
+    80b8:	00081100 	call	8110 <printf>
+  return 0;
+    80bc:	0005883a 	mov	r2,zero
+}
+    80c0:	e037883a 	mov	sp,fp
+    80c4:	dfc00117 	ldw	ra,4(sp)
+    80c8:	df000017 	ldw	fp,0(sp)
+    80cc:	dec00204 	addi	sp,sp,8
+    80d0:	f800283a 	ret
+
+000080d4 <_printf_r>:
+    80d4:	defffd04 	addi	sp,sp,-12
+    80d8:	dfc00015 	stw	ra,0(sp)
+    80dc:	d9800115 	stw	r6,4(sp)
+    80e0:	d9c00215 	stw	r7,8(sp)
+    80e4:	20c00217 	ldw	r3,8(r4)
+    80e8:	01800074 	movhi	r6,1
+    80ec:	31a1c404 	addi	r6,r6,-30960
+    80f0:	19800115 	stw	r6,4(r3)
+    80f4:	280d883a 	mov	r6,r5
+    80f8:	21400217 	ldw	r5,8(r4)
+    80fc:	d9c00104 	addi	r7,sp,4
+    8100:	00081c80 	call	81c8 <___vfprintf_internal_r>
+    8104:	dfc00017 	ldw	ra,0(sp)
+    8108:	dec00304 	addi	sp,sp,12
+    810c:	f800283a 	ret
+
+00008110 <printf>:
+    8110:	defffc04 	addi	sp,sp,-16
+    8114:	dfc00015 	stw	ra,0(sp)
+    8118:	d9400115 	stw	r5,4(sp)
+    811c:	d9800215 	stw	r6,8(sp)
+    8120:	d9c00315 	stw	r7,12(sp)
+    8124:	00800074 	movhi	r2,1
+    8128:	10a80904 	addi	r2,r2,-24540
+    812c:	10800017 	ldw	r2,0(r2)
+    8130:	01400074 	movhi	r5,1
+    8134:	2961c404 	addi	r5,r5,-30960
+    8138:	10c00217 	ldw	r3,8(r2)
+    813c:	d9800104 	addi	r6,sp,4
+    8140:	19400115 	stw	r5,4(r3)
+    8144:	200b883a 	mov	r5,r4
+    8148:	11000217 	ldw	r4,8(r2)
+    814c:	00086f40 	call	86f4 <__vfprintf_internal>
+    8150:	dfc00017 	ldw	ra,0(sp)
+    8154:	dec00404 	addi	sp,sp,16
+    8158:	f800283a 	ret
+
+0000815c <print_repeat>:
+    815c:	defffb04 	addi	sp,sp,-20
+    8160:	dc800315 	stw	r18,12(sp)
+    8164:	dc400215 	stw	r17,8(sp)
+    8168:	dc000115 	stw	r16,4(sp)
+    816c:	dfc00415 	stw	ra,16(sp)
+    8170:	2025883a 	mov	r18,r4
+    8174:	2823883a 	mov	r17,r5
+    8178:	d9800005 	stb	r6,0(sp)
+    817c:	3821883a 	mov	r16,r7
+    8180:	04000a0e 	bge	zero,r16,81ac <print_repeat+0x50>
+    8184:	88800117 	ldw	r2,4(r17)
+    8188:	01c00044 	movi	r7,1
+    818c:	d80d883a 	mov	r6,sp
+    8190:	880b883a 	mov	r5,r17
+    8194:	9009883a 	mov	r4,r18
+    8198:	103ee83a 	callr	r2
+    819c:	843fffc4 	addi	r16,r16,-1
+    81a0:	103ff726 	beq	r2,zero,8180 <_gp+0xffff6160>
+    81a4:	00bfffc4 	movi	r2,-1
+    81a8:	00000106 	br	81b0 <print_repeat+0x54>
+    81ac:	0005883a 	mov	r2,zero
+    81b0:	dfc00417 	ldw	ra,16(sp)
+    81b4:	dc800317 	ldw	r18,12(sp)
+    81b8:	dc400217 	ldw	r17,8(sp)
+    81bc:	dc000117 	ldw	r16,4(sp)
+    81c0:	dec00504 	addi	sp,sp,20
+    81c4:	f800283a 	ret
+
+000081c8 <___vfprintf_internal_r>:
+    81c8:	deffe504 	addi	sp,sp,-108
+    81cc:	d8c00804 	addi	r3,sp,32
+    81d0:	ddc01815 	stw	r23,96(sp)
+    81d4:	dd801715 	stw	r22,92(sp)
+    81d8:	dd401615 	stw	r21,88(sp)
+    81dc:	dd001515 	stw	r20,84(sp)
+    81e0:	dcc01415 	stw	r19,80(sp)
+    81e4:	dc801315 	stw	r18,76(sp)
+    81e8:	dc401215 	stw	r17,72(sp)
+    81ec:	dc001115 	stw	r16,68(sp)
+    81f0:	dfc01a15 	stw	ra,104(sp)
+    81f4:	df001915 	stw	fp,100(sp)
+    81f8:	2029883a 	mov	r20,r4
+    81fc:	2823883a 	mov	r17,r5
+    8200:	382d883a 	mov	r22,r7
+    8204:	d9800f15 	stw	r6,60(sp)
+    8208:	0021883a 	mov	r16,zero
+    820c:	d8000e15 	stw	zero,56(sp)
+    8210:	d8000a15 	stw	zero,40(sp)
+    8214:	002b883a 	mov	r21,zero
+    8218:	0027883a 	mov	r19,zero
+    821c:	0025883a 	mov	r18,zero
+    8220:	d8000c15 	stw	zero,48(sp)
+    8224:	d8000b15 	stw	zero,44(sp)
+    8228:	002f883a 	mov	r23,zero
+    822c:	d8c00915 	stw	r3,36(sp)
+    8230:	d8c00f17 	ldw	r3,60(sp)
+    8234:	19000003 	ldbu	r4,0(r3)
+    8238:	20803fcc 	andi	r2,r4,255
+    823c:	1080201c 	xori	r2,r2,128
+    8240:	10bfe004 	addi	r2,r2,-128
+    8244:	10011e26 	beq	r2,zero,86c0 <___vfprintf_internal_r+0x4f8>
+    8248:	00c00044 	movi	r3,1
+    824c:	b8c01426 	beq	r23,r3,82a0 <___vfprintf_internal_r+0xd8>
+    8250:	1dc00216 	blt	r3,r23,825c <___vfprintf_internal_r+0x94>
+    8254:	b8000626 	beq	r23,zero,8270 <___vfprintf_internal_r+0xa8>
+    8258:	00011506 	br	86b0 <___vfprintf_internal_r+0x4e8>
+    825c:	01400084 	movi	r5,2
+    8260:	b9401d26 	beq	r23,r5,82d8 <___vfprintf_internal_r+0x110>
+    8264:	014000c4 	movi	r5,3
+    8268:	b9402b26 	beq	r23,r5,8318 <___vfprintf_internal_r+0x150>
+    826c:	00011006 	br	86b0 <___vfprintf_internal_r+0x4e8>
+    8270:	01400944 	movi	r5,37
+    8274:	1140fc26 	beq	r2,r5,8668 <___vfprintf_internal_r+0x4a0>
+    8278:	88800117 	ldw	r2,4(r17)
+    827c:	d9000005 	stb	r4,0(sp)
+    8280:	01c00044 	movi	r7,1
+    8284:	d80d883a 	mov	r6,sp
+    8288:	880b883a 	mov	r5,r17
+    828c:	a009883a 	mov	r4,r20
+    8290:	103ee83a 	callr	r2
+    8294:	1000d81e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    8298:	84000044 	addi	r16,r16,1
+    829c:	00010406 	br	86b0 <___vfprintf_internal_r+0x4e8>
+    82a0:	01400c04 	movi	r5,48
+    82a4:	1140fa26 	beq	r2,r5,8690 <___vfprintf_internal_r+0x4c8>
+    82a8:	01400944 	movi	r5,37
+    82ac:	11400a1e 	bne	r2,r5,82d8 <___vfprintf_internal_r+0x110>
+    82b0:	d8800005 	stb	r2,0(sp)
+    82b4:	88800117 	ldw	r2,4(r17)
+    82b8:	b80f883a 	mov	r7,r23
+    82bc:	d80d883a 	mov	r6,sp
+    82c0:	880b883a 	mov	r5,r17
+    82c4:	a009883a 	mov	r4,r20
+    82c8:	103ee83a 	callr	r2
+    82cc:	1000ca1e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    82d0:	84000044 	addi	r16,r16,1
+    82d4:	0000f506 	br	86ac <___vfprintf_internal_r+0x4e4>
+    82d8:	25fff404 	addi	r23,r4,-48
+    82dc:	bdc03fcc 	andi	r23,r23,255
+    82e0:	00c00244 	movi	r3,9
+    82e4:	1dc00936 	bltu	r3,r23,830c <___vfprintf_internal_r+0x144>
+    82e8:	00bfffc4 	movi	r2,-1
+    82ec:	90800426 	beq	r18,r2,8300 <___vfprintf_internal_r+0x138>
+    82f0:	01400284 	movi	r5,10
+    82f4:	9009883a 	mov	r4,r18
+    82f8:	00089f00 	call	89f0 <__mulsi3>
+    82fc:	00000106 	br	8304 <___vfprintf_internal_r+0x13c>
+    8300:	0005883a 	mov	r2,zero
+    8304:	b8a5883a 	add	r18,r23,r2
+    8308:	0000e206 	br	8694 <___vfprintf_internal_r+0x4cc>
+    830c:	01400b84 	movi	r5,46
+    8310:	1140e426 	beq	r2,r5,86a4 <___vfprintf_internal_r+0x4dc>
+    8314:	05c00084 	movi	r23,2
+    8318:	213ff404 	addi	r4,r4,-48
+    831c:	27003fcc 	andi	fp,r4,255
+    8320:	00c00244 	movi	r3,9
+    8324:	1f000936 	bltu	r3,fp,834c <___vfprintf_internal_r+0x184>
+    8328:	00bfffc4 	movi	r2,-1
+    832c:	98800426 	beq	r19,r2,8340 <___vfprintf_internal_r+0x178>
+    8330:	01400284 	movi	r5,10
+    8334:	9809883a 	mov	r4,r19
+    8338:	00089f00 	call	89f0 <__mulsi3>
+    833c:	00000106 	br	8344 <___vfprintf_internal_r+0x17c>
+    8340:	0005883a 	mov	r2,zero
+    8344:	e0a7883a 	add	r19,fp,r2
+    8348:	0000d906 	br	86b0 <___vfprintf_internal_r+0x4e8>
+    834c:	00c01b04 	movi	r3,108
+    8350:	10c0d226 	beq	r2,r3,869c <___vfprintf_internal_r+0x4d4>
+    8354:	013fffc4 	movi	r4,-1
+    8358:	99000226 	beq	r19,r4,8364 <___vfprintf_internal_r+0x19c>
+    835c:	d8000b15 	stw	zero,44(sp)
+    8360:	00000106 	br	8368 <___vfprintf_internal_r+0x1a0>
+    8364:	04c00044 	movi	r19,1
+    8368:	01001a44 	movi	r4,105
+    836c:	11001626 	beq	r2,r4,83c8 <___vfprintf_internal_r+0x200>
+    8370:	20800916 	blt	r4,r2,8398 <___vfprintf_internal_r+0x1d0>
+    8374:	010018c4 	movi	r4,99
+    8378:	11008826 	beq	r2,r4,859c <___vfprintf_internal_r+0x3d4>
+    837c:	01001904 	movi	r4,100
+    8380:	11001126 	beq	r2,r4,83c8 <___vfprintf_internal_r+0x200>
+    8384:	01001604 	movi	r4,88
+    8388:	1100c81e 	bne	r2,r4,86ac <___vfprintf_internal_r+0x4e4>
+    838c:	00c00044 	movi	r3,1
+    8390:	d8c00e15 	stw	r3,56(sp)
+    8394:	00001506 	br	83ec <___vfprintf_internal_r+0x224>
+    8398:	01001cc4 	movi	r4,115
+    839c:	11009826 	beq	r2,r4,8600 <___vfprintf_internal_r+0x438>
+    83a0:	20800416 	blt	r4,r2,83b4 <___vfprintf_internal_r+0x1ec>
+    83a4:	01001bc4 	movi	r4,111
+    83a8:	1100c01e 	bne	r2,r4,86ac <___vfprintf_internal_r+0x4e4>
+    83ac:	05400204 	movi	r21,8
+    83b0:	00000f06 	br	83f0 <___vfprintf_internal_r+0x228>
+    83b4:	01001d44 	movi	r4,117
+    83b8:	11000d26 	beq	r2,r4,83f0 <___vfprintf_internal_r+0x228>
+    83bc:	01001e04 	movi	r4,120
+    83c0:	11000a26 	beq	r2,r4,83ec <___vfprintf_internal_r+0x224>
+    83c4:	0000b906 	br	86ac <___vfprintf_internal_r+0x4e4>
+    83c8:	d8c00a17 	ldw	r3,40(sp)
+    83cc:	b7000104 	addi	fp,r22,4
+    83d0:	18000726 	beq	r3,zero,83f0 <___vfprintf_internal_r+0x228>
+    83d4:	df000d15 	stw	fp,52(sp)
+    83d8:	b5c00017 	ldw	r23,0(r22)
+    83dc:	b800080e 	bge	r23,zero,8400 <___vfprintf_internal_r+0x238>
+    83e0:	05efc83a 	sub	r23,zero,r23
+    83e4:	02400044 	movi	r9,1
+    83e8:	00000606 	br	8404 <___vfprintf_internal_r+0x23c>
+    83ec:	05400404 	movi	r21,16
+    83f0:	b0c00104 	addi	r3,r22,4
+    83f4:	d8c00d15 	stw	r3,52(sp)
+    83f8:	b5c00017 	ldw	r23,0(r22)
+    83fc:	d8000a15 	stw	zero,40(sp)
+    8400:	0013883a 	mov	r9,zero
+    8404:	d839883a 	mov	fp,sp
+    8408:	b8001726 	beq	r23,zero,8468 <___vfprintf_internal_r+0x2a0>
+    840c:	a80b883a 	mov	r5,r21
+    8410:	b809883a 	mov	r4,r23
+    8414:	da401015 	stw	r9,64(sp)
+    8418:	00089340 	call	8934 <__udivsi3>
+    841c:	a80b883a 	mov	r5,r21
+    8420:	1009883a 	mov	r4,r2
+    8424:	102d883a 	mov	r22,r2
+    8428:	00089f00 	call	89f0 <__mulsi3>
+    842c:	b885c83a 	sub	r2,r23,r2
+    8430:	00c00244 	movi	r3,9
+    8434:	da401017 	ldw	r9,64(sp)
+    8438:	18800216 	blt	r3,r2,8444 <___vfprintf_internal_r+0x27c>
+    843c:	10800c04 	addi	r2,r2,48
+    8440:	00000506 	br	8458 <___vfprintf_internal_r+0x290>
+    8444:	d8c00e17 	ldw	r3,56(sp)
+    8448:	18000226 	beq	r3,zero,8454 <___vfprintf_internal_r+0x28c>
+    844c:	10800dc4 	addi	r2,r2,55
+    8450:	00000106 	br	8458 <___vfprintf_internal_r+0x290>
+    8454:	108015c4 	addi	r2,r2,87
+    8458:	e0800005 	stb	r2,0(fp)
+    845c:	b02f883a 	mov	r23,r22
+    8460:	e7000044 	addi	fp,fp,1
+    8464:	003fe806 	br	8408 <_gp+0xffff63e8>
+    8468:	e6efc83a 	sub	r23,fp,sp
+    846c:	9dc5c83a 	sub	r2,r19,r23
+    8470:	0080090e 	bge	zero,r2,8498 <___vfprintf_internal_r+0x2d0>
+    8474:	e085883a 	add	r2,fp,r2
+    8478:	01400c04 	movi	r5,48
+    847c:	d8c00917 	ldw	r3,36(sp)
+    8480:	e009883a 	mov	r4,fp
+    8484:	e0c0032e 	bgeu	fp,r3,8494 <___vfprintf_internal_r+0x2cc>
+    8488:	e7000044 	addi	fp,fp,1
+    848c:	21400005 	stb	r5,0(r4)
+    8490:	e0bffa1e 	bne	fp,r2,847c <_gp+0xffff645c>
+    8494:	e6efc83a 	sub	r23,fp,sp
+    8498:	d8c00b17 	ldw	r3,44(sp)
+    849c:	4dd1883a 	add	r8,r9,r23
+    84a0:	922dc83a 	sub	r22,r18,r8
+    84a4:	18001626 	beq	r3,zero,8500 <___vfprintf_internal_r+0x338>
+    84a8:	48000a26 	beq	r9,zero,84d4 <___vfprintf_internal_r+0x30c>
+    84ac:	00800b44 	movi	r2,45
+    84b0:	d8800805 	stb	r2,32(sp)
+    84b4:	88800117 	ldw	r2,4(r17)
+    84b8:	01c00044 	movi	r7,1
+    84bc:	d9800804 	addi	r6,sp,32
+    84c0:	880b883a 	mov	r5,r17
+    84c4:	a009883a 	mov	r4,r20
+    84c8:	103ee83a 	callr	r2
+    84cc:	10004a1e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    84d0:	84000044 	addi	r16,r16,1
+    84d4:	0580070e 	bge	zero,r22,84f4 <___vfprintf_internal_r+0x32c>
+    84d8:	b00f883a 	mov	r7,r22
+    84dc:	01800c04 	movi	r6,48
+    84e0:	880b883a 	mov	r5,r17
+    84e4:	a009883a 	mov	r4,r20
+    84e8:	000815c0 	call	815c <print_repeat>
+    84ec:	1000421e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    84f0:	85a1883a 	add	r16,r16,r22
+    84f4:	e02d883a 	mov	r22,fp
+    84f8:	bf2fc83a 	sub	r23,r23,fp
+    84fc:	00002006 	br	8580 <___vfprintf_internal_r+0x3b8>
+    8500:	0580090e 	bge	zero,r22,8528 <___vfprintf_internal_r+0x360>
+    8504:	b00f883a 	mov	r7,r22
+    8508:	01800804 	movi	r6,32
+    850c:	880b883a 	mov	r5,r17
+    8510:	a009883a 	mov	r4,r20
+    8514:	da401015 	stw	r9,64(sp)
+    8518:	000815c0 	call	815c <print_repeat>
+    851c:	da401017 	ldw	r9,64(sp)
+    8520:	1000351e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    8524:	85a1883a 	add	r16,r16,r22
+    8528:	483ff226 	beq	r9,zero,84f4 <_gp+0xffff64d4>
+    852c:	00800b44 	movi	r2,45
+    8530:	d8800805 	stb	r2,32(sp)
+    8534:	88800117 	ldw	r2,4(r17)
+    8538:	01c00044 	movi	r7,1
+    853c:	d9800804 	addi	r6,sp,32
+    8540:	880b883a 	mov	r5,r17
+    8544:	a009883a 	mov	r4,r20
+    8548:	103ee83a 	callr	r2
+    854c:	10002a1e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    8550:	84000044 	addi	r16,r16,1
+    8554:	003fe706 	br	84f4 <_gp+0xffff64d4>
+    8558:	b5bfffc4 	addi	r22,r22,-1
+    855c:	b0800003 	ldbu	r2,0(r22)
+    8560:	01c00044 	movi	r7,1
+    8564:	d9800804 	addi	r6,sp,32
+    8568:	d8800805 	stb	r2,32(sp)
+    856c:	88800117 	ldw	r2,4(r17)
+    8570:	880b883a 	mov	r5,r17
+    8574:	a009883a 	mov	r4,r20
+    8578:	103ee83a 	callr	r2
+    857c:	10001e1e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    8580:	8585c83a 	sub	r2,r16,r22
+    8584:	b5c9883a 	add	r4,r22,r23
+    8588:	e085883a 	add	r2,fp,r2
+    858c:	013ff216 	blt	zero,r4,8558 <_gp+0xffff6538>
+    8590:	1021883a 	mov	r16,r2
+    8594:	dd800d17 	ldw	r22,52(sp)
+    8598:	00004406 	br	86ac <___vfprintf_internal_r+0x4e4>
+    859c:	00800044 	movi	r2,1
+    85a0:	1480080e 	bge	r2,r18,85c4 <___vfprintf_internal_r+0x3fc>
+    85a4:	95ffffc4 	addi	r23,r18,-1
+    85a8:	b80f883a 	mov	r7,r23
+    85ac:	01800804 	movi	r6,32
+    85b0:	880b883a 	mov	r5,r17
+    85b4:	a009883a 	mov	r4,r20
+    85b8:	000815c0 	call	815c <print_repeat>
+    85bc:	10000e1e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    85c0:	85e1883a 	add	r16,r16,r23
+    85c4:	b0800017 	ldw	r2,0(r22)
+    85c8:	01c00044 	movi	r7,1
+    85cc:	d80d883a 	mov	r6,sp
+    85d0:	d8800005 	stb	r2,0(sp)
+    85d4:	88800117 	ldw	r2,4(r17)
+    85d8:	880b883a 	mov	r5,r17
+    85dc:	a009883a 	mov	r4,r20
+    85e0:	b5c00104 	addi	r23,r22,4
+    85e4:	103ee83a 	callr	r2
+    85e8:	1000031e 	bne	r2,zero,85f8 <___vfprintf_internal_r+0x430>
+    85ec:	84000044 	addi	r16,r16,1
+    85f0:	b82d883a 	mov	r22,r23
+    85f4:	00002d06 	br	86ac <___vfprintf_internal_r+0x4e4>
+    85f8:	00bfffc4 	movi	r2,-1
+    85fc:	00003106 	br	86c4 <___vfprintf_internal_r+0x4fc>
+    8600:	b5c00017 	ldw	r23,0(r22)
+    8604:	b7000104 	addi	fp,r22,4
+    8608:	b809883a 	mov	r4,r23
+    860c:	00087c80 	call	87c8 <strlen>
+    8610:	9091c83a 	sub	r8,r18,r2
+    8614:	102d883a 	mov	r22,r2
+    8618:	0200090e 	bge	zero,r8,8640 <___vfprintf_internal_r+0x478>
+    861c:	400f883a 	mov	r7,r8
+    8620:	01800804 	movi	r6,32
+    8624:	880b883a 	mov	r5,r17
+    8628:	a009883a 	mov	r4,r20
+    862c:	da001015 	stw	r8,64(sp)
+    8630:	000815c0 	call	815c <print_repeat>
+    8634:	da001017 	ldw	r8,64(sp)
+    8638:	103fef1e 	bne	r2,zero,85f8 <_gp+0xffff65d8>
+    863c:	8221883a 	add	r16,r16,r8
+    8640:	88800117 	ldw	r2,4(r17)
+    8644:	b00f883a 	mov	r7,r22
+    8648:	b80d883a 	mov	r6,r23
+    864c:	880b883a 	mov	r5,r17
+    8650:	a009883a 	mov	r4,r20
+    8654:	103ee83a 	callr	r2
+    8658:	103fe71e 	bne	r2,zero,85f8 <_gp+0xffff65d8>
+    865c:	85a1883a 	add	r16,r16,r22
+    8660:	e02d883a 	mov	r22,fp
+    8664:	00001106 	br	86ac <___vfprintf_internal_r+0x4e4>
+    8668:	00c00044 	movi	r3,1
+    866c:	04ffffc4 	movi	r19,-1
+    8670:	d8000e15 	stw	zero,56(sp)
+    8674:	d8c00a15 	stw	r3,40(sp)
+    8678:	05400284 	movi	r21,10
+    867c:	9825883a 	mov	r18,r19
+    8680:	d8000c15 	stw	zero,48(sp)
+    8684:	d8000b15 	stw	zero,44(sp)
+    8688:	182f883a 	mov	r23,r3
+    868c:	00000806 	br	86b0 <___vfprintf_internal_r+0x4e8>
+    8690:	ddc00b15 	stw	r23,44(sp)
+    8694:	05c00084 	movi	r23,2
+    8698:	00000506 	br	86b0 <___vfprintf_internal_r+0x4e8>
+    869c:	00c00044 	movi	r3,1
+    86a0:	d8c00c15 	stw	r3,48(sp)
+    86a4:	05c000c4 	movi	r23,3
+    86a8:	00000106 	br	86b0 <___vfprintf_internal_r+0x4e8>
+    86ac:	002f883a 	mov	r23,zero
+    86b0:	d8c00f17 	ldw	r3,60(sp)
+    86b4:	18c00044 	addi	r3,r3,1
+    86b8:	d8c00f15 	stw	r3,60(sp)
+    86bc:	003edc06 	br	8230 <_gp+0xffff6210>
+    86c0:	8005883a 	mov	r2,r16
+    86c4:	dfc01a17 	ldw	ra,104(sp)
+    86c8:	df001917 	ldw	fp,100(sp)
+    86cc:	ddc01817 	ldw	r23,96(sp)
+    86d0:	dd801717 	ldw	r22,92(sp)
+    86d4:	dd401617 	ldw	r21,88(sp)
+    86d8:	dd001517 	ldw	r20,84(sp)
+    86dc:	dcc01417 	ldw	r19,80(sp)
+    86e0:	dc801317 	ldw	r18,76(sp)
+    86e4:	dc401217 	ldw	r17,72(sp)
+    86e8:	dc001117 	ldw	r16,68(sp)
+    86ec:	dec01b04 	addi	sp,sp,108
+    86f0:	f800283a 	ret
+
+000086f4 <__vfprintf_internal>:
+    86f4:	00800074 	movhi	r2,1
+    86f8:	10a80904 	addi	r2,r2,-24540
+    86fc:	300f883a 	mov	r7,r6
+    8700:	280d883a 	mov	r6,r5
+    8704:	200b883a 	mov	r5,r4
+    8708:	11000017 	ldw	r4,0(r2)
+    870c:	00081c81 	jmpi	81c8 <___vfprintf_internal_r>
+
+00008710 <__sfvwrite_small_dev>:
+    8710:	2880000b 	ldhu	r2,0(r5)
+    8714:	1080020c 	andi	r2,r2,8
+    8718:	10002126 	beq	r2,zero,87a0 <__sfvwrite_small_dev+0x90>
+    871c:	2880008f 	ldh	r2,2(r5)
+    8720:	defffa04 	addi	sp,sp,-24
+    8724:	dc000015 	stw	r16,0(sp)
+    8728:	dfc00515 	stw	ra,20(sp)
+    872c:	dd000415 	stw	r20,16(sp)
+    8730:	dcc00315 	stw	r19,12(sp)
+    8734:	dc800215 	stw	r18,8(sp)
+    8738:	dc400115 	stw	r17,4(sp)
+    873c:	2821883a 	mov	r16,r5
+    8740:	10001216 	blt	r2,zero,878c <__sfvwrite_small_dev+0x7c>
+    8744:	2027883a 	mov	r19,r4
+    8748:	3025883a 	mov	r18,r6
+    874c:	3823883a 	mov	r17,r7
+    8750:	05010004 	movi	r20,1024
+    8754:	04400b0e 	bge	zero,r17,8784 <__sfvwrite_small_dev+0x74>
+    8758:	880f883a 	mov	r7,r17
+    875c:	a440010e 	bge	r20,r17,8764 <__sfvwrite_small_dev+0x54>
+    8760:	01c10004 	movi	r7,1024
+    8764:	8140008f 	ldh	r5,2(r16)
+    8768:	900d883a 	mov	r6,r18
+    876c:	9809883a 	mov	r4,r19
+    8770:	00087e40 	call	87e4 <_write_r>
+    8774:	0080050e 	bge	zero,r2,878c <__sfvwrite_small_dev+0x7c>
+    8778:	88a3c83a 	sub	r17,r17,r2
+    877c:	90a5883a 	add	r18,r18,r2
+    8780:	003ff406 	br	8754 <_gp+0xffff6734>
+    8784:	0005883a 	mov	r2,zero
+    8788:	00000706 	br	87a8 <__sfvwrite_small_dev+0x98>
+    878c:	8080000b 	ldhu	r2,0(r16)
+    8790:	10801014 	ori	r2,r2,64
+    8794:	8080000d 	sth	r2,0(r16)
+    8798:	00bfffc4 	movi	r2,-1
+    879c:	00000206 	br	87a8 <__sfvwrite_small_dev+0x98>
+    87a0:	00bfffc4 	movi	r2,-1
+    87a4:	f800283a 	ret
+    87a8:	dfc00517 	ldw	ra,20(sp)
+    87ac:	dd000417 	ldw	r20,16(sp)
+    87b0:	dcc00317 	ldw	r19,12(sp)
+    87b4:	dc800217 	ldw	r18,8(sp)
+    87b8:	dc400117 	ldw	r17,4(sp)
+    87bc:	dc000017 	ldw	r16,0(sp)
+    87c0:	dec00604 	addi	sp,sp,24
+    87c4:	f800283a 	ret
+
+000087c8 <strlen>:
+    87c8:	2005883a 	mov	r2,r4
+    87cc:	10c00007 	ldb	r3,0(r2)
+    87d0:	18000226 	beq	r3,zero,87dc <strlen+0x14>
+    87d4:	10800044 	addi	r2,r2,1
+    87d8:	003ffc06 	br	87cc <_gp+0xffff67ac>
+    87dc:	1105c83a 	sub	r2,r2,r4
+    87e0:	f800283a 	ret
+
+000087e4 <_write_r>:
+    87e4:	defffd04 	addi	sp,sp,-12
+    87e8:	dc000015 	stw	r16,0(sp)
+    87ec:	04000074 	movhi	r16,1
+    87f0:	dc400115 	stw	r17,4(sp)
+    87f4:	8428c504 	addi	r16,r16,-23788
+    87f8:	2023883a 	mov	r17,r4
+    87fc:	2809883a 	mov	r4,r5
+    8800:	300b883a 	mov	r5,r6
+    8804:	380d883a 	mov	r6,r7
+    8808:	dfc00215 	stw	ra,8(sp)
+    880c:	80000015 	stw	zero,0(r16)
+    8810:	0008bbc0 	call	8bbc <write>
+    8814:	00ffffc4 	movi	r3,-1
+    8818:	10c0031e 	bne	r2,r3,8828 <_write_r+0x44>
+    881c:	80c00017 	ldw	r3,0(r16)
+    8820:	18000126 	beq	r3,zero,8828 <_write_r+0x44>
+    8824:	88c00015 	stw	r3,0(r17)
+    8828:	dfc00217 	ldw	ra,8(sp)
+    882c:	dc400117 	ldw	r17,4(sp)
+    8830:	dc000017 	ldw	r16,0(sp)
+    8834:	dec00304 	addi	sp,sp,12
+    8838:	f800283a 	ret
+
+0000883c <__divsi3>:
+    883c:	20001b16 	blt	r4,zero,88ac <__divsi3+0x70>
+    8840:	000f883a 	mov	r7,zero
+    8844:	28001616 	blt	r5,zero,88a0 <__divsi3+0x64>
+    8848:	200d883a 	mov	r6,r4
+    884c:	29001a2e 	bgeu	r5,r4,88b8 <__divsi3+0x7c>
+    8850:	00800804 	movi	r2,32
+    8854:	00c00044 	movi	r3,1
+    8858:	00000106 	br	8860 <__divsi3+0x24>
+    885c:	10000d26 	beq	r2,zero,8894 <__divsi3+0x58>
+    8860:	294b883a 	add	r5,r5,r5
+    8864:	10bfffc4 	addi	r2,r2,-1
+    8868:	18c7883a 	add	r3,r3,r3
+    886c:	293ffb36 	bltu	r5,r4,885c <_gp+0xffff683c>
+    8870:	0005883a 	mov	r2,zero
+    8874:	18000726 	beq	r3,zero,8894 <__divsi3+0x58>
+    8878:	0005883a 	mov	r2,zero
+    887c:	31400236 	bltu	r6,r5,8888 <__divsi3+0x4c>
+    8880:	314dc83a 	sub	r6,r6,r5
+    8884:	10c4b03a 	or	r2,r2,r3
+    8888:	1806d07a 	srli	r3,r3,1
+    888c:	280ad07a 	srli	r5,r5,1
+    8890:	183ffa1e 	bne	r3,zero,887c <_gp+0xffff685c>
+    8894:	38000126 	beq	r7,zero,889c <__divsi3+0x60>
+    8898:	0085c83a 	sub	r2,zero,r2
+    889c:	f800283a 	ret
+    88a0:	014bc83a 	sub	r5,zero,r5
+    88a4:	39c0005c 	xori	r7,r7,1
+    88a8:	003fe706 	br	8848 <_gp+0xffff6828>
+    88ac:	0109c83a 	sub	r4,zero,r4
+    88b0:	01c00044 	movi	r7,1
+    88b4:	003fe306 	br	8844 <_gp+0xffff6824>
+    88b8:	00c00044 	movi	r3,1
+    88bc:	003fee06 	br	8878 <_gp+0xffff6858>
+
+000088c0 <__modsi3>:
+    88c0:	20001716 	blt	r4,zero,8920 <__modsi3+0x60>
+    88c4:	000f883a 	mov	r7,zero
+    88c8:	2005883a 	mov	r2,r4
+    88cc:	28001216 	blt	r5,zero,8918 <__modsi3+0x58>
+    88d0:	2900162e 	bgeu	r5,r4,892c <__modsi3+0x6c>
+    88d4:	01800804 	movi	r6,32
+    88d8:	00c00044 	movi	r3,1
+    88dc:	00000106 	br	88e4 <__modsi3+0x24>
+    88e0:	30000a26 	beq	r6,zero,890c <__modsi3+0x4c>
+    88e4:	294b883a 	add	r5,r5,r5
+    88e8:	31bfffc4 	addi	r6,r6,-1
+    88ec:	18c7883a 	add	r3,r3,r3
+    88f0:	293ffb36 	bltu	r5,r4,88e0 <_gp+0xffff68c0>
+    88f4:	18000526 	beq	r3,zero,890c <__modsi3+0x4c>
+    88f8:	1806d07a 	srli	r3,r3,1
+    88fc:	11400136 	bltu	r2,r5,8904 <__modsi3+0x44>
+    8900:	1145c83a 	sub	r2,r2,r5
+    8904:	280ad07a 	srli	r5,r5,1
+    8908:	183ffb1e 	bne	r3,zero,88f8 <_gp+0xffff68d8>
+    890c:	38000126 	beq	r7,zero,8914 <__modsi3+0x54>
+    8910:	0085c83a 	sub	r2,zero,r2
+    8914:	f800283a 	ret
+    8918:	014bc83a 	sub	r5,zero,r5
+    891c:	003fec06 	br	88d0 <_gp+0xffff68b0>
+    8920:	0109c83a 	sub	r4,zero,r4
+    8924:	01c00044 	movi	r7,1
+    8928:	003fe706 	br	88c8 <_gp+0xffff68a8>
+    892c:	00c00044 	movi	r3,1
+    8930:	003ff106 	br	88f8 <_gp+0xffff68d8>
+
+00008934 <__udivsi3>:
+    8934:	200d883a 	mov	r6,r4
+    8938:	2900152e 	bgeu	r5,r4,8990 <__udivsi3+0x5c>
+    893c:	28001416 	blt	r5,zero,8990 <__udivsi3+0x5c>
+    8940:	00800804 	movi	r2,32
+    8944:	00c00044 	movi	r3,1
+    8948:	00000206 	br	8954 <__udivsi3+0x20>
+    894c:	10000e26 	beq	r2,zero,8988 <__udivsi3+0x54>
+    8950:	28000516 	blt	r5,zero,8968 <__udivsi3+0x34>
+    8954:	294b883a 	add	r5,r5,r5
+    8958:	10bfffc4 	addi	r2,r2,-1
+    895c:	18c7883a 	add	r3,r3,r3
+    8960:	293ffa36 	bltu	r5,r4,894c <_gp+0xffff692c>
+    8964:	18000826 	beq	r3,zero,8988 <__udivsi3+0x54>
+    8968:	0005883a 	mov	r2,zero
+    896c:	31400236 	bltu	r6,r5,8978 <__udivsi3+0x44>
+    8970:	314dc83a 	sub	r6,r6,r5
+    8974:	10c4b03a 	or	r2,r2,r3
+    8978:	1806d07a 	srli	r3,r3,1
+    897c:	280ad07a 	srli	r5,r5,1
+    8980:	183ffa1e 	bne	r3,zero,896c <_gp+0xffff694c>
+    8984:	f800283a 	ret
+    8988:	0005883a 	mov	r2,zero
+    898c:	f800283a 	ret
+    8990:	00c00044 	movi	r3,1
+    8994:	003ff406 	br	8968 <_gp+0xffff6948>
+
+00008998 <__umodsi3>:
+    8998:	2005883a 	mov	r2,r4
+    899c:	2900122e 	bgeu	r5,r4,89e8 <__umodsi3+0x50>
+    89a0:	28001116 	blt	r5,zero,89e8 <__umodsi3+0x50>
+    89a4:	01800804 	movi	r6,32
+    89a8:	00c00044 	movi	r3,1
+    89ac:	00000206 	br	89b8 <__umodsi3+0x20>
+    89b0:	30000c26 	beq	r6,zero,89e4 <__umodsi3+0x4c>
+    89b4:	28000516 	blt	r5,zero,89cc <__umodsi3+0x34>
+    89b8:	294b883a 	add	r5,r5,r5
+    89bc:	31bfffc4 	addi	r6,r6,-1
+    89c0:	18c7883a 	add	r3,r3,r3
+    89c4:	293ffa36 	bltu	r5,r4,89b0 <_gp+0xffff6990>
+    89c8:	18000626 	beq	r3,zero,89e4 <__umodsi3+0x4c>
+    89cc:	1806d07a 	srli	r3,r3,1
+    89d0:	11400136 	bltu	r2,r5,89d8 <__umodsi3+0x40>
+    89d4:	1145c83a 	sub	r2,r2,r5
+    89d8:	280ad07a 	srli	r5,r5,1
+    89dc:	183ffb1e 	bne	r3,zero,89cc <_gp+0xffff69ac>
+    89e0:	f800283a 	ret
+    89e4:	f800283a 	ret
+    89e8:	00c00044 	movi	r3,1
+    89ec:	003ff706 	br	89cc <_gp+0xffff69ac>
+
+000089f0 <__mulsi3>:
+    89f0:	0005883a 	mov	r2,zero
+    89f4:	20000726 	beq	r4,zero,8a14 <__mulsi3+0x24>
+    89f8:	20c0004c 	andi	r3,r4,1
+    89fc:	2008d07a 	srli	r4,r4,1
+    8a00:	18000126 	beq	r3,zero,8a08 <__mulsi3+0x18>
+    8a04:	1145883a 	add	r2,r2,r5
+    8a08:	294b883a 	add	r5,r5,r5
+    8a0c:	203ffa1e 	bne	r4,zero,89f8 <_gp+0xffff69d8>
+    8a10:	f800283a 	ret
+    8a14:	f800283a 	ret
+
+00008a18 <alt_load_section>:
+ */
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+    8a18:	defffc04 	addi	sp,sp,-16
+    8a1c:	df000315 	stw	fp,12(sp)
+    8a20:	df000304 	addi	fp,sp,12
+    8a24:	e13ffd15 	stw	r4,-12(fp)
+    8a28:	e17ffe15 	stw	r5,-8(fp)
+    8a2c:	e1bfff15 	stw	r6,-4(fp)
+  if (to != from)
+    8a30:	e0fffe17 	ldw	r3,-8(fp)
+    8a34:	e0bffd17 	ldw	r2,-12(fp)
+    8a38:	18800c26 	beq	r3,r2,8a6c <alt_load_section+0x54>
+  {
+    while( to != end )
+    8a3c:	00000806 	br	8a60 <alt_load_section+0x48>
+    {
+      *to++ = *from++;
+    8a40:	e0bffe17 	ldw	r2,-8(fp)
+    8a44:	10c00104 	addi	r3,r2,4
+    8a48:	e0fffe15 	stw	r3,-8(fp)
+    8a4c:	e0fffd17 	ldw	r3,-12(fp)
+    8a50:	19000104 	addi	r4,r3,4
+    8a54:	e13ffd15 	stw	r4,-12(fp)
+    8a58:	18c00017 	ldw	r3,0(r3)
+    8a5c:	10c00015 	stw	r3,0(r2)
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+  {
+    while( to != end )
+    8a60:	e0fffe17 	ldw	r3,-8(fp)
+    8a64:	e0bfff17 	ldw	r2,-4(fp)
+    8a68:	18bff51e 	bne	r3,r2,8a40 <_gp+0xffff6a20>
+    {
+      *to++ = *from++;
+    }
+  }
+}
+    8a6c:	0001883a 	nop
+    8a70:	e037883a 	mov	sp,fp
+    8a74:	df000017 	ldw	fp,0(sp)
+    8a78:	dec00104 	addi	sp,sp,4
+    8a7c:	f800283a 	ret
+
+00008a80 <alt_load>:
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+    8a80:	defffe04 	addi	sp,sp,-8
+    8a84:	dfc00115 	stw	ra,4(sp)
+    8a88:	df000015 	stw	fp,0(sp)
+    8a8c:	d839883a 	mov	fp,sp
+  /* 
+   * Copy the .rwdata section. 
+   */
+
+  alt_load_section (&__flash_rwdata_start, 
+    8a90:	01800074 	movhi	r6,1
+    8a94:	31a81004 	addi	r6,r6,-24512
+    8a98:	01400074 	movhi	r5,1
+    8a9c:	29675b04 	addi	r5,r5,-25236
+    8aa0:	01000074 	movhi	r4,1
+    8aa4:	21281004 	addi	r4,r4,-24512
+    8aa8:	0008a180 	call	8a18 <alt_load_section>
+
+  /*
+   * Copy the exception handler.
+   */
+
+  alt_load_section (&__flash_exceptions_start, 
+    8aac:	01800074 	movhi	r6,1
+    8ab0:	31a00804 	addi	r6,r6,-32736
+    8ab4:	01400074 	movhi	r5,1
+    8ab8:	29600804 	addi	r5,r5,-32736
+    8abc:	01000074 	movhi	r4,1
+    8ac0:	21200804 	addi	r4,r4,-32736
+    8ac4:	0008a180 	call	8a18 <alt_load_section>
+
+  /*
+   * Copy the .rodata section.
+   */
+
+  alt_load_section (&__flash_rodata_start, 
+    8ac8:	01800074 	movhi	r6,1
+    8acc:	31a75b04 	addi	r6,r6,-25236
+    8ad0:	01400074 	movhi	r5,1
+    8ad4:	29674904 	addi	r5,r5,-25308
+    8ad8:	01000074 	movhi	r4,1
+    8adc:	21274904 	addi	r4,r4,-25308
+    8ae0:	0008a180 	call	8a18 <alt_load_section>
+  
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+    8ae4:	00090b00 	call	90b0 <alt_dcache_flush_all>
+  alt_icache_flush_all();
+    8ae8:	000929c0 	call	929c <alt_icache_flush_all>
+}
+    8aec:	0001883a 	nop
+    8af0:	e037883a 	mov	sp,fp
+    8af4:	dfc00117 	ldw	ra,4(sp)
+    8af8:	df000017 	ldw	fp,0(sp)
+    8afc:	dec00204 	addi	sp,sp,8
+    8b00:	f800283a 	ret
+
+00008b04 <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    8b04:	defffd04 	addi	sp,sp,-12
+    8b08:	dfc00215 	stw	ra,8(sp)
+    8b0c:	df000115 	stw	fp,4(sp)
+    8b10:	df000104 	addi	fp,sp,4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    8b14:	0009883a 	mov	r4,zero
+    8b18:	0008cf00 	call	8cf0 <alt_irq_init>
+
+  /* Initialize the operating system */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done alt_irq_init, calling alt_os_init.\r\n");
+  ALT_OS_INIT();
+    8b1c:	0001883a 	nop
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+    8b20:	0008d280 	call	8d28 <alt_sys_init>
+   * devices be present (not equal to /dev/null) and if direct drivers
+   * aren't being used.
+   */
+
+    ALT_LOG_PRINT_BOOT("[alt_main.c] Redirecting IO.\r\n");
+    alt_io_redirect(ALT_STDOUT, ALT_STDIN, ALT_STDERR);
+    8b24:	01800074 	movhi	r6,1
+    8b28:	31a74e04 	addi	r6,r6,-25288
+    8b2c:	01400074 	movhi	r5,1
+    8b30:	29674e04 	addi	r5,r5,-25288
+    8b34:	01000074 	movhi	r4,1
+    8b38:	21274e04 	addi	r4,r4,-25288
+    8b3c:	00093a00 	call	93a0 <alt_io_redirect>
+  /* 
+   * Call the C++ constructors 
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling C++ constructors.\r\n");
+  _do_ctors ();
+    8b40:	00091dc0 	call	91dc <_do_ctors>
+   * redefined as _exit()). This is in the interest of reducing code footprint,
+   * in that the atexit() overhead is removed when it's not needed.
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling atexit.\r\n");
+  atexit (_do_dtors);
+    8b44:	01000074 	movhi	r4,1
+    8b48:	21248f04 	addi	r4,r4,-28100
+    8b4c:	00099a40 	call	99a4 <atexit>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+#else
+  result = main (alt_argc, alt_argv, alt_envp);
+    8b50:	d0a0be17 	ldw	r2,-32008(gp)
+    8b54:	d0e0bf17 	ldw	r3,-32004(gp)
+    8b58:	d120c017 	ldw	r4,-32000(gp)
+    8b5c:	200d883a 	mov	r6,r4
+    8b60:	180b883a 	mov	r5,r3
+    8b64:	1009883a 	mov	r4,r2
+    8b68:	000803c0 	call	803c <main>
+    8b6c:	e0bfff15 	stw	r2,-4(fp)
+  close(STDOUT_FILENO);
+    8b70:	01000044 	movi	r4,1
+    8b74:	0008fd80 	call	8fd8 <close>
+  exit (result);
+    8b78:	e13fff17 	ldw	r4,-4(fp)
+    8b7c:	00099b80 	call	99b8 <exit>
+
+00008b80 <alt_get_errno>:
+#undef errno
+
+extern int errno;
+
+static ALT_INLINE int* alt_get_errno(void)
+{
+    8b80:	defffe04 	addi	sp,sp,-8
+    8b84:	dfc00115 	stw	ra,4(sp)
+    8b88:	df000015 	stw	fp,0(sp)
+    8b8c:	d839883a 	mov	fp,sp
+  return ((alt_errno) ? alt_errno() : &errno);
+    8b90:	d0a00717 	ldw	r2,-32740(gp)
+    8b94:	10000326 	beq	r2,zero,8ba4 <alt_get_errno+0x24>
+    8b98:	d0a00717 	ldw	r2,-32740(gp)
+    8b9c:	103ee83a 	callr	r2
+    8ba0:	00000106 	br	8ba8 <alt_get_errno+0x28>
+    8ba4:	d0a0bd04 	addi	r2,gp,-32012
+}
+    8ba8:	e037883a 	mov	sp,fp
+    8bac:	dfc00117 	ldw	ra,4(sp)
+    8bb0:	df000017 	ldw	fp,0(sp)
+    8bb4:	dec00204 	addi	sp,sp,8
+    8bb8:	f800283a 	ret
+
+00008bbc <write>:
+}
+
+#else /* !ALT_USE_DIRECT_DRIVERS */
+
+int ALT_WRITE (int file, const void *ptr, size_t len)
+{
+    8bbc:	defff904 	addi	sp,sp,-28
+    8bc0:	dfc00615 	stw	ra,24(sp)
+    8bc4:	df000515 	stw	fp,20(sp)
+    8bc8:	df000504 	addi	fp,sp,20
+    8bcc:	e13ffd15 	stw	r4,-12(fp)
+    8bd0:	e17ffe15 	stw	r5,-8(fp)
+    8bd4:	e1bfff15 	stw	r6,-4(fp)
+   * A common error case is that when the file descriptor was created, the call
+   * to open() failed resulting in a negative file descriptor. This is trapped
+   * below so that we don't try and process an invalid file descriptor.
+   */
+
+  fd = (file < 0) ? NULL : &alt_fd_list[file];
+    8bd8:	e0bffd17 	ldw	r2,-12(fp)
+    8bdc:	10000816 	blt	r2,zero,8c00 <write+0x44>
+    8be0:	01400304 	movi	r5,12
+    8be4:	e13ffd17 	ldw	r4,-12(fp)
+    8be8:	00089f00 	call	89f0 <__mulsi3>
+    8bec:	1007883a 	mov	r3,r2
+    8bf0:	00800074 	movhi	r2,1
+    8bf4:	10a7a804 	addi	r2,r2,-24928
+    8bf8:	1885883a 	add	r2,r3,r2
+    8bfc:	00000106 	br	8c04 <write+0x48>
+    8c00:	0005883a 	mov	r2,zero
+    8c04:	e0bffb15 	stw	r2,-20(fp)
+  
+  if (fd)
+    8c08:	e0bffb17 	ldw	r2,-20(fp)
+    8c0c:	10002126 	beq	r2,zero,8c94 <write+0xd8>
+     * If the file has not been opened with write access, or if the driver does
+     * not provide an implementation of write(), generate an error. Otherwise
+     * call the drivers write() function to process the request.
+     */
+
+    if (((fd->fd_flags & O_ACCMODE) != O_RDONLY) && fd->dev->write)
+    8c10:	e0bffb17 	ldw	r2,-20(fp)
+    8c14:	10800217 	ldw	r2,8(r2)
+    8c18:	108000cc 	andi	r2,r2,3
+    8c1c:	10001826 	beq	r2,zero,8c80 <write+0xc4>
+    8c20:	e0bffb17 	ldw	r2,-20(fp)
+    8c24:	10800017 	ldw	r2,0(r2)
+    8c28:	10800617 	ldw	r2,24(r2)
+    8c2c:	10001426 	beq	r2,zero,8c80 <write+0xc4>
+    {
+      
+      /* ALT_LOG - see altera_hal/HAL/inc/sys/alt_log_printf.h */
+      ALT_LOG_WRITE_FUNCTION(ptr,len);
+
+      if ((rval = fd->dev->write(fd, ptr, len)) < 0)
+    8c30:	e0bffb17 	ldw	r2,-20(fp)
+    8c34:	10800017 	ldw	r2,0(r2)
+    8c38:	10800617 	ldw	r2,24(r2)
+    8c3c:	e0ffff17 	ldw	r3,-4(fp)
+    8c40:	180d883a 	mov	r6,r3
+    8c44:	e17ffe17 	ldw	r5,-8(fp)
+    8c48:	e13ffb17 	ldw	r4,-20(fp)
+    8c4c:	103ee83a 	callr	r2
+    8c50:	e0bffc15 	stw	r2,-16(fp)
+    8c54:	e0bffc17 	ldw	r2,-16(fp)
+    8c58:	1000070e 	bge	r2,zero,8c78 <write+0xbc>
+      {
+        ALT_ERRNO = -rval;
+    8c5c:	0008b800 	call	8b80 <alt_get_errno>
+    8c60:	1007883a 	mov	r3,r2
+    8c64:	e0bffc17 	ldw	r2,-16(fp)
+    8c68:	0085c83a 	sub	r2,zero,r2
+    8c6c:	18800015 	stw	r2,0(r3)
+        return -1;
+    8c70:	00bfffc4 	movi	r2,-1
+    8c74:	00000c06 	br	8ca8 <write+0xec>
+      }
+      return rval;
+    8c78:	e0bffc17 	ldw	r2,-16(fp)
+    8c7c:	00000a06 	br	8ca8 <write+0xec>
+    }
+    else
+    {
+      ALT_ERRNO = EACCES;
+    8c80:	0008b800 	call	8b80 <alt_get_errno>
+    8c84:	1007883a 	mov	r3,r2
+    8c88:	00800344 	movi	r2,13
+    8c8c:	18800015 	stw	r2,0(r3)
+    8c90:	00000406 	br	8ca4 <write+0xe8>
+    }
+  }
+  else  
+  {
+    ALT_ERRNO = EBADFD;
+    8c94:	0008b800 	call	8b80 <alt_get_errno>
+    8c98:	1007883a 	mov	r3,r2
+    8c9c:	00801444 	movi	r2,81
+    8ca0:	18800015 	stw	r2,0(r3)
+  }
+  return -1;
+    8ca4:	00bfffc4 	movi	r2,-1
+}
+    8ca8:	e037883a 	mov	sp,fp
+    8cac:	dfc00117 	ldw	ra,4(sp)
+    8cb0:	df000017 	ldw	fp,0(sp)
+    8cb4:	dec00204 	addi	sp,sp,8
+    8cb8:	f800283a 	ret
+
+00008cbc <alt_dev_reg>:
+ */
+
+extern int alt_fs_reg  (alt_dev* dev); 
+
+static ALT_INLINE int alt_dev_reg (alt_dev* dev)
+{
+    8cbc:	defffd04 	addi	sp,sp,-12
+    8cc0:	dfc00215 	stw	ra,8(sp)
+    8cc4:	df000115 	stw	fp,4(sp)
+    8cc8:	df000104 	addi	fp,sp,4
+    8ccc:	e13fff15 	stw	r4,-4(fp)
+  extern alt_llist alt_dev_list;
+
+  return alt_dev_llist_insert ((alt_dev_llist*) dev, &alt_dev_list);
+    8cd0:	d1600404 	addi	r5,gp,-32752
+    8cd4:	e13fff17 	ldw	r4,-4(fp)
+    8cd8:	00091380 	call	9138 <alt_dev_llist_insert>
+}
+    8cdc:	e037883a 	mov	sp,fp
+    8ce0:	dfc00117 	ldw	ra,4(sp)
+    8ce4:	df000017 	ldw	fp,0(sp)
+    8ce8:	dec00204 	addi	sp,sp,8
+    8cec:	f800283a 	ret
+
+00008cf0 <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+    8cf0:	defffd04 	addi	sp,sp,-12
+    8cf4:	dfc00215 	stw	ra,8(sp)
+    8cf8:	df000115 	stw	fp,4(sp)
+    8cfc:	df000104 	addi	fp,sp,4
+    8d00:	e13fff15 	stw	r4,-4(fp)
+    ALTERA_NIOS2_GEN2_IRQ_INIT ( NIOS2_GEN2_0, nios2_gen2_0);
+    8d04:	00097240 	call	9724 <altera_nios2_gen2_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts (void)
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+    8d08:	00800044 	movi	r2,1
+    8d0c:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+    8d10:	0001883a 	nop
+    8d14:	e037883a 	mov	sp,fp
+    8d18:	dfc00117 	ldw	ra,4(sp)
+    8d1c:	df000017 	ldw	fp,0(sp)
+    8d20:	dec00204 	addi	sp,sp,8
+    8d24:	f800283a 	ret
+
+00008d28 <alt_sys_init>:
+ * Initialize the non-interrupt controller devices.
+ * Called after alt_irq_init().
+ */
+
+void alt_sys_init( void )
+{
+    8d28:	defffe04 	addi	sp,sp,-8
+    8d2c:	dfc00115 	stw	ra,4(sp)
+    8d30:	df000015 	stw	fp,0(sp)
+    8d34:	d839883a 	mov	fp,sp
+    ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
+    8d38:	01000074 	movhi	r4,1
+    8d3c:	21279304 	addi	r4,r4,-25012
+    8d40:	0008cbc0 	call	8cbc <alt_dev_reg>
+}
+    8d44:	0001883a 	nop
+    8d48:	e037883a 	mov	sp,fp
+    8d4c:	dfc00117 	ldw	ra,4(sp)
+    8d50:	df000017 	ldw	fp,0(sp)
+    8d54:	dec00204 	addi	sp,sp,8
+    8d58:	f800283a 	ret
+
+00008d5c <altera_avalon_jtag_uart_read_fd>:
+ *
+ */
+
+int 
+altera_avalon_jtag_uart_read_fd(alt_fd* fd, char* buffer, int space)
+{
+    8d5c:	defffa04 	addi	sp,sp,-24
+    8d60:	dfc00515 	stw	ra,20(sp)
+    8d64:	df000415 	stw	fp,16(sp)
+    8d68:	df000404 	addi	fp,sp,16
+    8d6c:	e13ffd15 	stw	r4,-12(fp)
+    8d70:	e17ffe15 	stw	r5,-8(fp)
+    8d74:	e1bfff15 	stw	r6,-4(fp)
+    altera_avalon_jtag_uart_dev* dev = (altera_avalon_jtag_uart_dev*) fd->dev; 
+    8d78:	e0bffd17 	ldw	r2,-12(fp)
+    8d7c:	10800017 	ldw	r2,0(r2)
+    8d80:	e0bffc15 	stw	r2,-16(fp)
+
+    return altera_avalon_jtag_uart_read(&dev->state, buffer, space,
+    8d84:	e0bffc17 	ldw	r2,-16(fp)
+    8d88:	10c00a04 	addi	r3,r2,40
+    8d8c:	e0bffd17 	ldw	r2,-12(fp)
+    8d90:	10800217 	ldw	r2,8(r2)
+    8d94:	100f883a 	mov	r7,r2
+    8d98:	e1bfff17 	ldw	r6,-4(fp)
+    8d9c:	e17ffe17 	ldw	r5,-8(fp)
+    8da0:	1809883a 	mov	r4,r3
+    8da4:	0008e1c0 	call	8e1c <altera_avalon_jtag_uart_read>
+      fd->fd_flags);
+}
+    8da8:	e037883a 	mov	sp,fp
+    8dac:	dfc00117 	ldw	ra,4(sp)
+    8db0:	df000017 	ldw	fp,0(sp)
+    8db4:	dec00204 	addi	sp,sp,8
+    8db8:	f800283a 	ret
+
+00008dbc <altera_avalon_jtag_uart_write_fd>:
+
+int 
+altera_avalon_jtag_uart_write_fd(alt_fd* fd, const char* buffer, int space)
+{
+    8dbc:	defffa04 	addi	sp,sp,-24
+    8dc0:	dfc00515 	stw	ra,20(sp)
+    8dc4:	df000415 	stw	fp,16(sp)
+    8dc8:	df000404 	addi	fp,sp,16
+    8dcc:	e13ffd15 	stw	r4,-12(fp)
+    8dd0:	e17ffe15 	stw	r5,-8(fp)
+    8dd4:	e1bfff15 	stw	r6,-4(fp)
+    altera_avalon_jtag_uart_dev* dev = (altera_avalon_jtag_uart_dev*) fd->dev; 
+    8dd8:	e0bffd17 	ldw	r2,-12(fp)
+    8ddc:	10800017 	ldw	r2,0(r2)
+    8de0:	e0bffc15 	stw	r2,-16(fp)
+
+    return altera_avalon_jtag_uart_write(&dev->state, buffer, space,
+    8de4:	e0bffc17 	ldw	r2,-16(fp)
+    8de8:	10c00a04 	addi	r3,r2,40
+    8dec:	e0bffd17 	ldw	r2,-12(fp)
+    8df0:	10800217 	ldw	r2,8(r2)
+    8df4:	100f883a 	mov	r7,r2
+    8df8:	e1bfff17 	ldw	r6,-4(fp)
+    8dfc:	e17ffe17 	ldw	r5,-8(fp)
+    8e00:	1809883a 	mov	r4,r3
+    8e04:	0008f080 	call	8f08 <altera_avalon_jtag_uart_write>
+      fd->fd_flags);
+}
+    8e08:	e037883a 	mov	sp,fp
+    8e0c:	dfc00117 	ldw	ra,4(sp)
+    8e10:	df000017 	ldw	fp,0(sp)
+    8e14:	dec00204 	addi	sp,sp,8
+    8e18:	f800283a 	ret
+
+00008e1c <altera_avalon_jtag_uart_read>:
+ */
+
+int 
+altera_avalon_jtag_uart_read(altera_avalon_jtag_uart_state* sp, 
+  char* buffer, int space, int flags)
+{
+    8e1c:	defff704 	addi	sp,sp,-36
+    8e20:	df000815 	stw	fp,32(sp)
+    8e24:	df000804 	addi	fp,sp,32
+    8e28:	e13ffc15 	stw	r4,-16(fp)
+    8e2c:	e17ffd15 	stw	r5,-12(fp)
+    8e30:	e1bffe15 	stw	r6,-8(fp)
+    8e34:	e1ffff15 	stw	r7,-4(fp)
+  unsigned int base = sp->base;
+    8e38:	e0bffc17 	ldw	r2,-16(fp)
+    8e3c:	10800017 	ldw	r2,0(r2)
+    8e40:	e0bff915 	stw	r2,-28(fp)
+
+  char * ptr = buffer;
+    8e44:	e0bffd17 	ldw	r2,-12(fp)
+    8e48:	e0bff815 	stw	r2,-32(fp)
+  char * end = buffer + space;
+    8e4c:	e0bffe17 	ldw	r2,-8(fp)
+    8e50:	e0fffd17 	ldw	r3,-12(fp)
+    8e54:	1885883a 	add	r2,r3,r2
+    8e58:	e0bffa15 	stw	r2,-24(fp)
+
+  while (ptr < end)
+    8e5c:	00001206 	br	8ea8 <altera_avalon_jtag_uart_read+0x8c>
+  {
+    unsigned int data = IORD_ALTERA_AVALON_JTAG_UART_DATA(base);
+    8e60:	e0bff917 	ldw	r2,-28(fp)
+    8e64:	10800037 	ldwio	r2,0(r2)
+    8e68:	e0bffb15 	stw	r2,-20(fp)
+
+    if (data & ALTERA_AVALON_JTAG_UART_DATA_RVALID_MSK)
+    8e6c:	e0bffb17 	ldw	r2,-20(fp)
+    8e70:	10a0000c 	andi	r2,r2,32768
+    8e74:	10000626 	beq	r2,zero,8e90 <altera_avalon_jtag_uart_read+0x74>
+      *ptr++ = (data & ALTERA_AVALON_JTAG_UART_DATA_DATA_MSK) >> ALTERA_AVALON_JTAG_UART_DATA_DATA_OFST;
+    8e78:	e0bff817 	ldw	r2,-32(fp)
+    8e7c:	10c00044 	addi	r3,r2,1
+    8e80:	e0fff815 	stw	r3,-32(fp)
+    8e84:	e0fffb17 	ldw	r3,-20(fp)
+    8e88:	10c00005 	stb	r3,0(r2)
+    8e8c:	00000606 	br	8ea8 <altera_avalon_jtag_uart_read+0x8c>
+    else if (ptr != buffer)
+    8e90:	e0fff817 	ldw	r3,-32(fp)
+    8e94:	e0bffd17 	ldw	r2,-12(fp)
+    8e98:	1880071e 	bne	r3,r2,8eb8 <altera_avalon_jtag_uart_read+0x9c>
+      break;
+    else if(flags & O_NONBLOCK)
+    8e9c:	e0bfff17 	ldw	r2,-4(fp)
+    8ea0:	1090000c 	andi	r2,r2,16384
+    8ea4:	1000061e 	bne	r2,zero,8ec0 <altera_avalon_jtag_uart_read+0xa4>
+  unsigned int base = sp->base;
+
+  char * ptr = buffer;
+  char * end = buffer + space;
+
+  while (ptr < end)
+    8ea8:	e0fff817 	ldw	r3,-32(fp)
+    8eac:	e0bffa17 	ldw	r2,-24(fp)
+    8eb0:	18bfeb36 	bltu	r3,r2,8e60 <_gp+0xffff6e40>
+    8eb4:	00000306 	br	8ec4 <altera_avalon_jtag_uart_read+0xa8>
+    unsigned int data = IORD_ALTERA_AVALON_JTAG_UART_DATA(base);
+
+    if (data & ALTERA_AVALON_JTAG_UART_DATA_RVALID_MSK)
+      *ptr++ = (data & ALTERA_AVALON_JTAG_UART_DATA_DATA_MSK) >> ALTERA_AVALON_JTAG_UART_DATA_DATA_OFST;
+    else if (ptr != buffer)
+      break;
+    8eb8:	0001883a 	nop
+    8ebc:	00000106 	br	8ec4 <altera_avalon_jtag_uart_read+0xa8>
+    else if(flags & O_NONBLOCK)
+      break;   
+    8ec0:	0001883a 	nop
+    
+  }
+
+  if (ptr != buffer)
+    8ec4:	e0fff817 	ldw	r3,-32(fp)
+    8ec8:	e0bffd17 	ldw	r2,-12(fp)
+    8ecc:	18800426 	beq	r3,r2,8ee0 <altera_avalon_jtag_uart_read+0xc4>
+    return ptr - buffer;
+    8ed0:	e0fff817 	ldw	r3,-32(fp)
+    8ed4:	e0bffd17 	ldw	r2,-12(fp)
+    8ed8:	1885c83a 	sub	r2,r3,r2
+    8edc:	00000606 	br	8ef8 <altera_avalon_jtag_uart_read+0xdc>
+  else if (flags & O_NONBLOCK)
+    8ee0:	e0bfff17 	ldw	r2,-4(fp)
+    8ee4:	1090000c 	andi	r2,r2,16384
+    8ee8:	10000226 	beq	r2,zero,8ef4 <altera_avalon_jtag_uart_read+0xd8>
+    return -EWOULDBLOCK;
+    8eec:	00bffd44 	movi	r2,-11
+    8ef0:	00000106 	br	8ef8 <altera_avalon_jtag_uart_read+0xdc>
+  else
+    return -EIO;
+    8ef4:	00bffec4 	movi	r2,-5
+}
+    8ef8:	e037883a 	mov	sp,fp
+    8efc:	df000017 	ldw	fp,0(sp)
+    8f00:	dec00104 	addi	sp,sp,4
+    8f04:	f800283a 	ret
+
+00008f08 <altera_avalon_jtag_uart_write>:
+ * one FIFOs worth of data.  But you said you didn't want to use interrupts :-)
+ */
+
+int altera_avalon_jtag_uart_write(altera_avalon_jtag_uart_state* sp, 
+  const char * ptr, int count, int flags)
+{
+    8f08:	defff904 	addi	sp,sp,-28
+    8f0c:	df000615 	stw	fp,24(sp)
+    8f10:	df000604 	addi	fp,sp,24
+    8f14:	e13ffc15 	stw	r4,-16(fp)
+    8f18:	e17ffd15 	stw	r5,-12(fp)
+    8f1c:	e1bffe15 	stw	r6,-8(fp)
+    8f20:	e1ffff15 	stw	r7,-4(fp)
+  unsigned int base = sp->base;
+    8f24:	e0bffc17 	ldw	r2,-16(fp)
+    8f28:	10800017 	ldw	r2,0(r2)
+    8f2c:	e0bffa15 	stw	r2,-24(fp)
+
+  const char * end = ptr + count;
+    8f30:	e0bffe17 	ldw	r2,-8(fp)
+    8f34:	e0fffd17 	ldw	r3,-12(fp)
+    8f38:	1885883a 	add	r2,r3,r2
+    8f3c:	e0bffb15 	stw	r2,-20(fp)
+
+  while (ptr < end)
+    8f40:	00000e06 	br	8f7c <altera_avalon_jtag_uart_write+0x74>
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+    8f44:	e0bffa17 	ldw	r2,-24(fp)
+    8f48:	10800104 	addi	r2,r2,4
+    8f4c:	10800037 	ldwio	r2,0(r2)
+    8f50:	10bfffec 	andhi	r2,r2,65535
+    8f54:	10000926 	beq	r2,zero,8f7c <altera_avalon_jtag_uart_write+0x74>
+      IOWR_ALTERA_AVALON_JTAG_UART_DATA(base, *ptr++);
+    8f58:	e0fffa17 	ldw	r3,-24(fp)
+    8f5c:	e0bffd17 	ldw	r2,-12(fp)
+    8f60:	11000044 	addi	r4,r2,1
+    8f64:	e13ffd15 	stw	r4,-12(fp)
+    8f68:	10800003 	ldbu	r2,0(r2)
+    8f6c:	10803fcc 	andi	r2,r2,255
+    8f70:	1080201c 	xori	r2,r2,128
+    8f74:	10bfe004 	addi	r2,r2,-128
+    8f78:	18800035 	stwio	r2,0(r3)
+{
+  unsigned int base = sp->base;
+
+  const char * end = ptr + count;
+
+  while (ptr < end)
+    8f7c:	e0fffd17 	ldw	r3,-12(fp)
+    8f80:	e0bffb17 	ldw	r2,-20(fp)
+    8f84:	18bfef36 	bltu	r3,r2,8f44 <_gp+0xffff6f24>
+    if ((IORD_ALTERA_AVALON_JTAG_UART_CONTROL(base) & ALTERA_AVALON_JTAG_UART_CONTROL_WSPACE_MSK) != 0)
+      IOWR_ALTERA_AVALON_JTAG_UART_DATA(base, *ptr++);
+
+  return count;
+    8f88:	e0bffe17 	ldw	r2,-8(fp)
+}
+    8f8c:	e037883a 	mov	sp,fp
+    8f90:	df000017 	ldw	fp,0(sp)
+    8f94:	dec00104 	addi	sp,sp,4
+    8f98:	f800283a 	ret
+
+00008f9c <alt_get_errno>:
+#undef errno
+
+extern int errno;
+
+static ALT_INLINE int* alt_get_errno(void)
+{
+    8f9c:	defffe04 	addi	sp,sp,-8
+    8fa0:	dfc00115 	stw	ra,4(sp)
+    8fa4:	df000015 	stw	fp,0(sp)
+    8fa8:	d839883a 	mov	fp,sp
+  return ((alt_errno) ? alt_errno() : &errno);
+    8fac:	d0a00717 	ldw	r2,-32740(gp)
+    8fb0:	10000326 	beq	r2,zero,8fc0 <alt_get_errno+0x24>
+    8fb4:	d0a00717 	ldw	r2,-32740(gp)
+    8fb8:	103ee83a 	callr	r2
+    8fbc:	00000106 	br	8fc4 <alt_get_errno+0x28>
+    8fc0:	d0a0bd04 	addi	r2,gp,-32012
+}
+    8fc4:	e037883a 	mov	sp,fp
+    8fc8:	dfc00117 	ldw	ra,4(sp)
+    8fcc:	df000017 	ldw	fp,0(sp)
+    8fd0:	dec00204 	addi	sp,sp,8
+    8fd4:	f800283a 	ret
+
+00008fd8 <close>:
+ *
+ * ALT_CLOSE is mapped onto the close() system call in alt_syscall.h
+ */
+ 
+int ALT_CLOSE (int fildes)
+{
+    8fd8:	defffb04 	addi	sp,sp,-20
+    8fdc:	dfc00415 	stw	ra,16(sp)
+    8fe0:	df000315 	stw	fp,12(sp)
+    8fe4:	df000304 	addi	fp,sp,12
+    8fe8:	e13fff15 	stw	r4,-4(fp)
+   * A common error case is that when the file descriptor was created, the call
+   * to open() failed resulting in a negative file descriptor. This is trapped
+   * below so that we don't try and process an invalid file descriptor.
+   */
+
+  fd = (fildes < 0) ? NULL : &alt_fd_list[fildes];
+    8fec:	e0bfff17 	ldw	r2,-4(fp)
+    8ff0:	10000816 	blt	r2,zero,9014 <close+0x3c>
+    8ff4:	01400304 	movi	r5,12
+    8ff8:	e13fff17 	ldw	r4,-4(fp)
+    8ffc:	00089f00 	call	89f0 <__mulsi3>
+    9000:	1007883a 	mov	r3,r2
+    9004:	00800074 	movhi	r2,1
+    9008:	10a7a804 	addi	r2,r2,-24928
+    900c:	1885883a 	add	r2,r3,r2
+    9010:	00000106 	br	9018 <close+0x40>
+    9014:	0005883a 	mov	r2,zero
+    9018:	e0bffd15 	stw	r2,-12(fp)
+
+  if (fd)
+    901c:	e0bffd17 	ldw	r2,-12(fp)
+    9020:	10001926 	beq	r2,zero,9088 <close+0xb0>
+    /*
+     * If the associated file system/device has a close function, call it so 
+     * that any necessary cleanup code can run.
+     */
+
+    rval = (fd->dev->close) ? fd->dev->close(fd) : 0;
+    9024:	e0bffd17 	ldw	r2,-12(fp)
+    9028:	10800017 	ldw	r2,0(r2)
+    902c:	10800417 	ldw	r2,16(r2)
+    9030:	10000626 	beq	r2,zero,904c <close+0x74>
+    9034:	e0bffd17 	ldw	r2,-12(fp)
+    9038:	10800017 	ldw	r2,0(r2)
+    903c:	10800417 	ldw	r2,16(r2)
+    9040:	e13ffd17 	ldw	r4,-12(fp)
+    9044:	103ee83a 	callr	r2
+    9048:	00000106 	br	9050 <close+0x78>
+    904c:	0005883a 	mov	r2,zero
+    9050:	e0bffe15 	stw	r2,-8(fp)
+
+    /* Free the file descriptor structure and return. */
+
+    alt_release_fd (fildes);
+    9054:	e13fff17 	ldw	r4,-4(fp)
+    9058:	00096a00 	call	96a0 <alt_release_fd>
+    if (rval < 0)
+    905c:	e0bffe17 	ldw	r2,-8(fp)
+    9060:	1000070e 	bge	r2,zero,9080 <close+0xa8>
+    {
+      ALT_ERRNO = -rval;
+    9064:	0008f9c0 	call	8f9c <alt_get_errno>
+    9068:	1007883a 	mov	r3,r2
+    906c:	e0bffe17 	ldw	r2,-8(fp)
+    9070:	0085c83a 	sub	r2,zero,r2
+    9074:	18800015 	stw	r2,0(r3)
+      return -1;
+    9078:	00bfffc4 	movi	r2,-1
+    907c:	00000706 	br	909c <close+0xc4>
+    }
+    return 0;
+    9080:	0005883a 	mov	r2,zero
+    9084:	00000506 	br	909c <close+0xc4>
+  }
+  else
+  {
+    ALT_ERRNO = EBADFD;
+    9088:	0008f9c0 	call	8f9c <alt_get_errno>
+    908c:	1007883a 	mov	r3,r2
+    9090:	00801444 	movi	r2,81
+    9094:	18800015 	stw	r2,0(r3)
+    return -1;
+    9098:	00bfffc4 	movi	r2,-1
+  }
+}
+    909c:	e037883a 	mov	sp,fp
+    90a0:	dfc00117 	ldw	ra,4(sp)
+    90a4:	df000017 	ldw	fp,0(sp)
+    90a8:	dec00204 	addi	sp,sp,8
+    90ac:	f800283a 	ret
+
+000090b0 <alt_dcache_flush_all>:
+/*
+ * alt_dcache_flush_all() is called to flush the entire data cache.
+ */
+
+void alt_dcache_flush_all (void)
+{
+    90b0:	deffff04 	addi	sp,sp,-4
+    90b4:	df000015 	stw	fp,0(sp)
+    90b8:	d839883a 	mov	fp,sp
+  for (i = (char*) 0; i < (char*) NIOS2_DCACHE_SIZE; i+= NIOS2_DCACHE_LINE_SIZE)
+  { 
+    __asm__ volatile ("flushd (%0)" :: "r" (i));
+  }
+#endif /* NIOS2_DCACHE_SIZE > 0 */
+}
+    90bc:	0001883a 	nop
+    90c0:	e037883a 	mov	sp,fp
+    90c4:	df000017 	ldw	fp,0(sp)
+    90c8:	dec00104 	addi	sp,sp,4
+    90cc:	f800283a 	ret
+
+000090d0 <alt_dev_null_write>:
+ * by the alt_dev_null device. It simple discards all data passed to it, and
+ * indicates that the data has been successfully transmitted.
+ */
+
+static int alt_dev_null_write (alt_fd* fd, const char* ptr, int len)
+{
+    90d0:	defffc04 	addi	sp,sp,-16
+    90d4:	df000315 	stw	fp,12(sp)
+    90d8:	df000304 	addi	fp,sp,12
+    90dc:	e13ffd15 	stw	r4,-12(fp)
+    90e0:	e17ffe15 	stw	r5,-8(fp)
+    90e4:	e1bfff15 	stw	r6,-4(fp)
+  return len;
+    90e8:	e0bfff17 	ldw	r2,-4(fp)
+}
+    90ec:	e037883a 	mov	sp,fp
+    90f0:	df000017 	ldw	fp,0(sp)
+    90f4:	dec00104 	addi	sp,sp,4
+    90f8:	f800283a 	ret
+
+000090fc <alt_get_errno>:
+#undef errno
+
+extern int errno;
+
+static ALT_INLINE int* alt_get_errno(void)
+{
+    90fc:	defffe04 	addi	sp,sp,-8
+    9100:	dfc00115 	stw	ra,4(sp)
+    9104:	df000015 	stw	fp,0(sp)
+    9108:	d839883a 	mov	fp,sp
+  return ((alt_errno) ? alt_errno() : &errno);
+    910c:	d0a00717 	ldw	r2,-32740(gp)
+    9110:	10000326 	beq	r2,zero,9120 <alt_get_errno+0x24>
+    9114:	d0a00717 	ldw	r2,-32740(gp)
+    9118:	103ee83a 	callr	r2
+    911c:	00000106 	br	9124 <alt_get_errno+0x28>
+    9120:	d0a0bd04 	addi	r2,gp,-32012
+}
+    9124:	e037883a 	mov	sp,fp
+    9128:	dfc00117 	ldw	ra,4(sp)
+    912c:	df000017 	ldw	fp,0(sp)
+    9130:	dec00204 	addi	sp,sp,8
+    9134:	f800283a 	ret
+
+00009138 <alt_dev_llist_insert>:
+/*
+ *
+ */
+
+int alt_dev_llist_insert (alt_dev_llist* dev, alt_llist* list)
+{
+    9138:	defffa04 	addi	sp,sp,-24
+    913c:	dfc00515 	stw	ra,20(sp)
+    9140:	df000415 	stw	fp,16(sp)
+    9144:	df000404 	addi	fp,sp,16
+    9148:	e13ffe15 	stw	r4,-8(fp)
+    914c:	e17fff15 	stw	r5,-4(fp)
+  /*
+   * check that the device exists, and that it has a valid name.
+   */
+
+  if (!dev || !dev->name)
+    9150:	e0bffe17 	ldw	r2,-8(fp)
+    9154:	10000326 	beq	r2,zero,9164 <alt_dev_llist_insert+0x2c>
+    9158:	e0bffe17 	ldw	r2,-8(fp)
+    915c:	10800217 	ldw	r2,8(r2)
+    9160:	1000061e 	bne	r2,zero,917c <alt_dev_llist_insert+0x44>
+  {
+    ALT_ERRNO = EINVAL;
+    9164:	00090fc0 	call	90fc <alt_get_errno>
+    9168:	1007883a 	mov	r3,r2
+    916c:	00800584 	movi	r2,22
+    9170:	18800015 	stw	r2,0(r3)
+    return -EINVAL;
+    9174:	00bffa84 	movi	r2,-22
+    9178:	00001306 	br	91c8 <alt_dev_llist_insert+0x90>
+  
+  /*
+   * register the device.
+   */
+  
+  alt_llist_insert(list, &dev->llist);
+    917c:	e0bffe17 	ldw	r2,-8(fp)
+    9180:	e0ffff17 	ldw	r3,-4(fp)
+    9184:	e0fffc15 	stw	r3,-16(fp)
+    9188:	e0bffd15 	stw	r2,-12(fp)
+ */
+
+static ALT_INLINE void ALT_ALWAYS_INLINE alt_llist_insert(alt_llist* list, 
+                alt_llist* entry)
+{
+  entry->previous = list;
+    918c:	e0bffd17 	ldw	r2,-12(fp)
+    9190:	e0fffc17 	ldw	r3,-16(fp)
+    9194:	10c00115 	stw	r3,4(r2)
+  entry->next     = list->next;
+    9198:	e0bffc17 	ldw	r2,-16(fp)
+    919c:	10c00017 	ldw	r3,0(r2)
+    91a0:	e0bffd17 	ldw	r2,-12(fp)
+    91a4:	10c00015 	stw	r3,0(r2)
+
+  list->next->previous = entry;
+    91a8:	e0bffc17 	ldw	r2,-16(fp)
+    91ac:	10800017 	ldw	r2,0(r2)
+    91b0:	e0fffd17 	ldw	r3,-12(fp)
+    91b4:	10c00115 	stw	r3,4(r2)
+  list->next           = entry;
+    91b8:	e0bffc17 	ldw	r2,-16(fp)
+    91bc:	e0fffd17 	ldw	r3,-12(fp)
+    91c0:	10c00015 	stw	r3,0(r2)
+
+  return 0;  
+    91c4:	0005883a 	mov	r2,zero
+}
+    91c8:	e037883a 	mov	sp,fp
+    91cc:	dfc00117 	ldw	ra,4(sp)
+    91d0:	df000017 	ldw	fp,0(sp)
+    91d4:	dec00204 	addi	sp,sp,8
+    91d8:	f800283a 	ret
+
+000091dc <_do_ctors>:
+/*
+ * Run the C++ static constructors.
+ */
+
+void _do_ctors(void)
+{
+    91dc:	defffd04 	addi	sp,sp,-12
+    91e0:	dfc00215 	stw	ra,8(sp)
+    91e4:	df000115 	stw	fp,4(sp)
+    91e8:	df000104 	addi	fp,sp,4
+  constructor* ctor;
+
+  for (ctor = &__CTOR_END__[-1]; ctor >= __CTOR_LIST__; ctor--)
+    91ec:	00800074 	movhi	r2,1
+    91f0:	10a74804 	addi	r2,r2,-25312
+    91f4:	e0bfff15 	stw	r2,-4(fp)
+    91f8:	00000606 	br	9214 <_do_ctors+0x38>
+        (*ctor) (); 
+    91fc:	e0bfff17 	ldw	r2,-4(fp)
+    9200:	10800017 	ldw	r2,0(r2)
+    9204:	103ee83a 	callr	r2
+
+void _do_ctors(void)
+{
+  constructor* ctor;
+
+  for (ctor = &__CTOR_END__[-1]; ctor >= __CTOR_LIST__; ctor--)
+    9208:	e0bfff17 	ldw	r2,-4(fp)
+    920c:	10bfff04 	addi	r2,r2,-4
+    9210:	e0bfff15 	stw	r2,-4(fp)
+    9214:	e0ffff17 	ldw	r3,-4(fp)
+    9218:	00800074 	movhi	r2,1
+    921c:	10a74904 	addi	r2,r2,-25308
+    9220:	18bff62e 	bgeu	r3,r2,91fc <_gp+0xffff71dc>
+        (*ctor) (); 
+}
+    9224:	0001883a 	nop
+    9228:	e037883a 	mov	sp,fp
+    922c:	dfc00117 	ldw	ra,4(sp)
+    9230:	df000017 	ldw	fp,0(sp)
+    9234:	dec00204 	addi	sp,sp,8
+    9238:	f800283a 	ret
+
+0000923c <_do_dtors>:
+/*
+ * Run the C++ static destructors.
+ */
+
+void _do_dtors(void)
+{
+    923c:	defffd04 	addi	sp,sp,-12
+    9240:	dfc00215 	stw	ra,8(sp)
+    9244:	df000115 	stw	fp,4(sp)
+    9248:	df000104 	addi	fp,sp,4
+  destructor* dtor;
+
+  for (dtor = &__DTOR_END__[-1]; dtor >= __DTOR_LIST__; dtor--)
+    924c:	00800074 	movhi	r2,1
+    9250:	10a74804 	addi	r2,r2,-25312
+    9254:	e0bfff15 	stw	r2,-4(fp)
+    9258:	00000606 	br	9274 <_do_dtors+0x38>
+        (*dtor) (); 
+    925c:	e0bfff17 	ldw	r2,-4(fp)
+    9260:	10800017 	ldw	r2,0(r2)
+    9264:	103ee83a 	callr	r2
+
+void _do_dtors(void)
+{
+  destructor* dtor;
+
+  for (dtor = &__DTOR_END__[-1]; dtor >= __DTOR_LIST__; dtor--)
+    9268:	e0bfff17 	ldw	r2,-4(fp)
+    926c:	10bfff04 	addi	r2,r2,-4
+    9270:	e0bfff15 	stw	r2,-4(fp)
+    9274:	e0ffff17 	ldw	r3,-4(fp)
+    9278:	00800074 	movhi	r2,1
+    927c:	10a74904 	addi	r2,r2,-25308
+    9280:	18bff62e 	bgeu	r3,r2,925c <_gp+0xffff723c>
+        (*dtor) (); 
+}
+    9284:	0001883a 	nop
+    9288:	e037883a 	mov	sp,fp
+    928c:	dfc00117 	ldw	ra,4(sp)
+    9290:	df000017 	ldw	fp,0(sp)
+    9294:	dec00204 	addi	sp,sp,8
+    9298:	f800283a 	ret
+
+0000929c <alt_icache_flush_all>:
+/*
+ * alt_icache_flush_all() is called to flush the entire instruction cache.
+ */
+
+void alt_icache_flush_all (void)
+{
+    929c:	deffff04 	addi	sp,sp,-4
+    92a0:	df000015 	stw	fp,0(sp)
+    92a4:	d839883a 	mov	fp,sp
+#if NIOS2_ICACHE_SIZE > 0
+  alt_icache_flush (0, NIOS2_ICACHE_SIZE);
+#endif
+}
+    92a8:	0001883a 	nop
+    92ac:	e037883a 	mov	sp,fp
+    92b0:	df000017 	ldw	fp,0(sp)
+    92b4:	dec00104 	addi	sp,sp,4
+    92b8:	f800283a 	ret
+
+000092bc <alt_open_fd>:
+ * If the device can not be succesfully opened, then the input file descriptor
+ * remains unchanged.
+ */
+
+static void alt_open_fd(alt_fd* fd, const char* name, int flags, int mode)
+{
+    92bc:	defff804 	addi	sp,sp,-32
+    92c0:	dfc00715 	stw	ra,28(sp)
+    92c4:	df000615 	stw	fp,24(sp)
+    92c8:	dc000515 	stw	r16,20(sp)
+    92cc:	df000604 	addi	fp,sp,24
+    92d0:	e13ffb15 	stw	r4,-20(fp)
+    92d4:	e17ffc15 	stw	r5,-16(fp)
+    92d8:	e1bffd15 	stw	r6,-12(fp)
+    92dc:	e1fffe15 	stw	r7,-8(fp)
+  int old;
+
+  old = open (name, flags, mode);
+    92e0:	e1bffe17 	ldw	r6,-8(fp)
+    92e4:	e17ffd17 	ldw	r5,-12(fp)
+    92e8:	e13ffc17 	ldw	r4,-16(fp)
+    92ec:	00095440 	call	9544 <open>
+    92f0:	e0bffa15 	stw	r2,-24(fp)
+
+  if (old >= 0)
+    92f4:	e0bffa17 	ldw	r2,-24(fp)
+    92f8:	10002216 	blt	r2,zero,9384 <alt_open_fd+0xc8>
+  {
+    fd->dev      = alt_fd_list[old].dev;
+    92fc:	04000074 	movhi	r16,1
+    9300:	8427a804 	addi	r16,r16,-24928
+    9304:	e0bffa17 	ldw	r2,-24(fp)
+    9308:	01400304 	movi	r5,12
+    930c:	1009883a 	mov	r4,r2
+    9310:	00089f00 	call	89f0 <__mulsi3>
+    9314:	8085883a 	add	r2,r16,r2
+    9318:	10c00017 	ldw	r3,0(r2)
+    931c:	e0bffb17 	ldw	r2,-20(fp)
+    9320:	10c00015 	stw	r3,0(r2)
+    fd->priv     = alt_fd_list[old].priv;
+    9324:	04000074 	movhi	r16,1
+    9328:	8427a804 	addi	r16,r16,-24928
+    932c:	e0bffa17 	ldw	r2,-24(fp)
+    9330:	01400304 	movi	r5,12
+    9334:	1009883a 	mov	r4,r2
+    9338:	00089f00 	call	89f0 <__mulsi3>
+    933c:	8085883a 	add	r2,r16,r2
+    9340:	10800104 	addi	r2,r2,4
+    9344:	10c00017 	ldw	r3,0(r2)
+    9348:	e0bffb17 	ldw	r2,-20(fp)
+    934c:	10c00115 	stw	r3,4(r2)
+    fd->fd_flags = alt_fd_list[old].fd_flags;
+    9350:	04000074 	movhi	r16,1
+    9354:	8427a804 	addi	r16,r16,-24928
+    9358:	e0bffa17 	ldw	r2,-24(fp)
+    935c:	01400304 	movi	r5,12
+    9360:	1009883a 	mov	r4,r2
+    9364:	00089f00 	call	89f0 <__mulsi3>
+    9368:	8085883a 	add	r2,r16,r2
+    936c:	10800204 	addi	r2,r2,8
+    9370:	10c00017 	ldw	r3,0(r2)
+    9374:	e0bffb17 	ldw	r2,-20(fp)
+    9378:	10c00215 	stw	r3,8(r2)
+
+    alt_release_fd (old);
+    937c:	e13ffa17 	ldw	r4,-24(fp)
+    9380:	00096a00 	call	96a0 <alt_release_fd>
+  }
+} 
+    9384:	0001883a 	nop
+    9388:	e6ffff04 	addi	sp,fp,-4
+    938c:	dfc00217 	ldw	ra,8(sp)
+    9390:	df000117 	ldw	fp,4(sp)
+    9394:	dc000017 	ldw	r16,0(sp)
+    9398:	dec00304 	addi	sp,sp,12
+    939c:	f800283a 	ret
+
+000093a0 <alt_io_redirect>:
+ */
+ 
+void alt_io_redirect(const char* stdout_dev, 
+                     const char* stdin_dev, 
+                     const char* stderr_dev)
+{
+    93a0:	defffb04 	addi	sp,sp,-20
+    93a4:	dfc00415 	stw	ra,16(sp)
+    93a8:	df000315 	stw	fp,12(sp)
+    93ac:	df000304 	addi	fp,sp,12
+    93b0:	e13ffd15 	stw	r4,-12(fp)
+    93b4:	e17ffe15 	stw	r5,-8(fp)
+    93b8:	e1bfff15 	stw	r6,-4(fp)
+  /* Redirect the channels */
+
+  alt_open_fd (&alt_fd_list[STDOUT_FILENO], stdout_dev, O_WRONLY, 0777);
+    93bc:	01c07fc4 	movi	r7,511
+    93c0:	01800044 	movi	r6,1
+    93c4:	e17ffd17 	ldw	r5,-12(fp)
+    93c8:	01000074 	movhi	r4,1
+    93cc:	2127ab04 	addi	r4,r4,-24916
+    93d0:	00092bc0 	call	92bc <alt_open_fd>
+  alt_open_fd (&alt_fd_list[STDIN_FILENO], stdin_dev, O_RDONLY, 0777);
+    93d4:	01c07fc4 	movi	r7,511
+    93d8:	000d883a 	mov	r6,zero
+    93dc:	e17ffe17 	ldw	r5,-8(fp)
+    93e0:	01000074 	movhi	r4,1
+    93e4:	2127a804 	addi	r4,r4,-24928
+    93e8:	00092bc0 	call	92bc <alt_open_fd>
+  alt_open_fd (&alt_fd_list[STDERR_FILENO], stderr_dev, O_WRONLY, 0777);
+    93ec:	01c07fc4 	movi	r7,511
+    93f0:	01800044 	movi	r6,1
+    93f4:	e17fff17 	ldw	r5,-4(fp)
+    93f8:	01000074 	movhi	r4,1
+    93fc:	2127ae04 	addi	r4,r4,-24904
+    9400:	00092bc0 	call	92bc <alt_open_fd>
+}  
+    9404:	0001883a 	nop
+    9408:	e037883a 	mov	sp,fp
+    940c:	dfc00117 	ldw	ra,4(sp)
+    9410:	df000017 	ldw	fp,0(sp)
+    9414:	dec00204 	addi	sp,sp,8
+    9418:	f800283a 	ret
+
+0000941c <alt_get_errno>:
+#undef errno
+
+extern int errno;
+
+static ALT_INLINE int* alt_get_errno(void)
+{
+    941c:	defffe04 	addi	sp,sp,-8
+    9420:	dfc00115 	stw	ra,4(sp)
+    9424:	df000015 	stw	fp,0(sp)
+    9428:	d839883a 	mov	fp,sp
+  return ((alt_errno) ? alt_errno() : &errno);
+    942c:	d0a00717 	ldw	r2,-32740(gp)
+    9430:	10000326 	beq	r2,zero,9440 <alt_get_errno+0x24>
+    9434:	d0a00717 	ldw	r2,-32740(gp)
+    9438:	103ee83a 	callr	r2
+    943c:	00000106 	br	9444 <alt_get_errno+0x28>
+    9440:	d0a0bd04 	addi	r2,gp,-32012
+}
+    9444:	e037883a 	mov	sp,fp
+    9448:	dfc00117 	ldw	ra,4(sp)
+    944c:	df000017 	ldw	fp,0(sp)
+    9450:	dec00204 	addi	sp,sp,8
+    9454:	f800283a 	ret
+
+00009458 <alt_file_locked>:
+ * performed for devices. Filesystems are required to handle the ioctl() call
+ * themselves, and report the error from the filesystems open() function. 
+ */ 
+
+static int alt_file_locked (alt_fd* fd)
+{
+    9458:	defffb04 	addi	sp,sp,-20
+    945c:	dfc00415 	stw	ra,16(sp)
+    9460:	df000315 	stw	fp,12(sp)
+    9464:	dc000215 	stw	r16,8(sp)
+    9468:	df000304 	addi	fp,sp,12
+    946c:	e13ffe15 	stw	r4,-8(fp)
+
+  /*
+   * Mark the file descriptor as belonging to a device.
+   */
+
+  fd->fd_flags |= ALT_FD_DEV;
+    9470:	e0bffe17 	ldw	r2,-8(fp)
+    9474:	10800217 	ldw	r2,8(r2)
+    9478:	10d00034 	orhi	r3,r2,16384
+    947c:	e0bffe17 	ldw	r2,-8(fp)
+    9480:	10c00215 	stw	r3,8(r2)
+  /*
+   * Loop through all current file descriptors searching for one that's locked
+   * for exclusive access. If a match is found, generate an error.
+   */
+
+  for (i = 0; i <= alt_max_fd; i++)
+    9484:	e03ffd15 	stw	zero,-12(fp)
+    9488:	00002306 	br	9518 <alt_file_locked+0xc0>
+  {
+    if ((alt_fd_list[i].dev == fd->dev) &&
+    948c:	04000074 	movhi	r16,1
+    9490:	8427a804 	addi	r16,r16,-24928
+    9494:	e0bffd17 	ldw	r2,-12(fp)
+    9498:	01400304 	movi	r5,12
+    949c:	1009883a 	mov	r4,r2
+    94a0:	00089f00 	call	89f0 <__mulsi3>
+    94a4:	8085883a 	add	r2,r16,r2
+    94a8:	10c00017 	ldw	r3,0(r2)
+    94ac:	e0bffe17 	ldw	r2,-8(fp)
+    94b0:	10800017 	ldw	r2,0(r2)
+    94b4:	1880151e 	bne	r3,r2,950c <alt_file_locked+0xb4>
+        (alt_fd_list[i].fd_flags & ALT_FD_EXCL) &&
+    94b8:	04000074 	movhi	r16,1
+    94bc:	8427a804 	addi	r16,r16,-24928
+    94c0:	e0bffd17 	ldw	r2,-12(fp)
+    94c4:	01400304 	movi	r5,12
+    94c8:	1009883a 	mov	r4,r2
+    94cc:	00089f00 	call	89f0 <__mulsi3>
+    94d0:	8085883a 	add	r2,r16,r2
+    94d4:	10800204 	addi	r2,r2,8
+    94d8:	10800017 	ldw	r2,0(r2)
+   * for exclusive access. If a match is found, generate an error.
+   */
+
+  for (i = 0; i <= alt_max_fd; i++)
+  {
+    if ((alt_fd_list[i].dev == fd->dev) &&
+    94dc:	10000b0e 	bge	r2,zero,950c <alt_file_locked+0xb4>
+        (alt_fd_list[i].fd_flags & ALT_FD_EXCL) &&
+        (&alt_fd_list[i] != fd))
+    94e0:	01400304 	movi	r5,12
+    94e4:	e13ffd17 	ldw	r4,-12(fp)
+    94e8:	00089f00 	call	89f0 <__mulsi3>
+    94ec:	1007883a 	mov	r3,r2
+    94f0:	00800074 	movhi	r2,1
+    94f4:	10a7a804 	addi	r2,r2,-24928
+    94f8:	1887883a 	add	r3,r3,r2
+   */
+
+  for (i = 0; i <= alt_max_fd; i++)
+  {
+    if ((alt_fd_list[i].dev == fd->dev) &&
+        (alt_fd_list[i].fd_flags & ALT_FD_EXCL) &&
+    94fc:	e0bffe17 	ldw	r2,-8(fp)
+    9500:	18800226 	beq	r3,r2,950c <alt_file_locked+0xb4>
+        (&alt_fd_list[i] != fd))
+    {
+      return -EACCES;
+    9504:	00bffcc4 	movi	r2,-13
+    9508:	00000806 	br	952c <alt_file_locked+0xd4>
+  /*
+   * Loop through all current file descriptors searching for one that's locked
+   * for exclusive access. If a match is found, generate an error.
+   */
+
+  for (i = 0; i <= alt_max_fd; i++)
+    950c:	e0bffd17 	ldw	r2,-12(fp)
+    9510:	10800044 	addi	r2,r2,1
+    9514:	e0bffd15 	stw	r2,-12(fp)
+    9518:	d0a00617 	ldw	r2,-32744(gp)
+    951c:	1007883a 	mov	r3,r2
+    9520:	e0bffd17 	ldw	r2,-12(fp)
+    9524:	18bfd92e 	bgeu	r3,r2,948c <_gp+0xffff746c>
+    }
+  }
+  
+  /* The device is not locked */
+ 
+  return 0;
+    9528:	0005883a 	mov	r2,zero
+}
+    952c:	e6ffff04 	addi	sp,fp,-4
+    9530:	dfc00217 	ldw	ra,8(sp)
+    9534:	df000117 	ldw	fp,4(sp)
+    9538:	dc000017 	ldw	r16,0(sp)
+    953c:	dec00304 	addi	sp,sp,12
+    9540:	f800283a 	ret
+
+00009544 <open>:
+ *
+ * ALT_OPEN is mapped onto the open() system call in alt_syscall.h
+ */
+ 
+int ALT_OPEN (const char* file, int flags, int mode)
+{ 
+    9544:	defff604 	addi	sp,sp,-40
+    9548:	dfc00915 	stw	ra,36(sp)
+    954c:	df000815 	stw	fp,32(sp)
+    9550:	df000804 	addi	fp,sp,32
+    9554:	e13ffd15 	stw	r4,-12(fp)
+    9558:	e17ffe15 	stw	r5,-8(fp)
+    955c:	e1bfff15 	stw	r6,-4(fp)
+  alt_dev* dev;
+  alt_fd*  fd;
+  int index  = -1;
+    9560:	00bfffc4 	movi	r2,-1
+    9564:	e0bff915 	stw	r2,-28(fp)
+  int status = -ENODEV;
+    9568:	00bffb44 	movi	r2,-19
+    956c:	e0bffa15 	stw	r2,-24(fp)
+  int isafs = 0;
+    9570:	e03ffb15 	stw	zero,-20(fp)
+  /* 
+   * Check the device list, to see if a device with a matching name is 
+   * registered.
+   */
+  
+  if (!(dev = alt_find_dev (file, &alt_dev_list)))
+    9574:	d1600404 	addi	r5,gp,-32752
+    9578:	e13ffd17 	ldw	r4,-12(fp)
+    957c:	00097480 	call	9748 <alt_find_dev>
+    9580:	e0bff815 	stw	r2,-32(fp)
+    9584:	e0bff817 	ldw	r2,-32(fp)
+    9588:	1000051e 	bne	r2,zero,95a0 <open+0x5c>
+  {
+    /* No matching device, so try the filesystem list */
+
+    dev   = alt_find_file (file);
+    958c:	e13ffd17 	ldw	r4,-12(fp)
+    9590:	00097d80 	call	97d8 <alt_find_file>
+    9594:	e0bff815 	stw	r2,-32(fp)
+    isafs = 1;
+    9598:	00800044 	movi	r2,1
+    959c:	e0bffb15 	stw	r2,-20(fp)
+
+  /* 
+   * If a matching device or filesystem is found, allocate a file descriptor. 
+   */
+
+  if (dev)
+    95a0:	e0bff817 	ldw	r2,-32(fp)
+    95a4:	10002b26 	beq	r2,zero,9654 <open+0x110>
+  {
+    if ((index = alt_get_fd (dev)) < 0)
+    95a8:	e13ff817 	ldw	r4,-32(fp)
+    95ac:	00098e00 	call	98e0 <alt_get_fd>
+    95b0:	e0bff915 	stw	r2,-28(fp)
+    95b4:	e0bff917 	ldw	r2,-28(fp)
+    95b8:	1000030e 	bge	r2,zero,95c8 <open+0x84>
+    {
+      status = index;
+    95bc:	e0bff917 	ldw	r2,-28(fp)
+    95c0:	e0bffa15 	stw	r2,-24(fp)
+    95c4:	00002506 	br	965c <open+0x118>
+    }
+    else
+    {
+      fd = &alt_fd_list[index];
+    95c8:	01400304 	movi	r5,12
+    95cc:	e13ff917 	ldw	r4,-28(fp)
+    95d0:	00089f00 	call	89f0 <__mulsi3>
+    95d4:	1007883a 	mov	r3,r2
+    95d8:	00800074 	movhi	r2,1
+    95dc:	10a7a804 	addi	r2,r2,-24928
+    95e0:	1885883a 	add	r2,r3,r2
+    95e4:	e0bffc15 	stw	r2,-16(fp)
+      fd->fd_flags = (flags & ~ALT_FD_FLAGS_MASK);
+    95e8:	e0fffe17 	ldw	r3,-8(fp)
+    95ec:	00900034 	movhi	r2,16384
+    95f0:	10bfffc4 	addi	r2,r2,-1
+    95f4:	1886703a 	and	r3,r3,r2
+    95f8:	e0bffc17 	ldw	r2,-16(fp)
+    95fc:	10c00215 	stw	r3,8(r2)
+      
+      /* If this is a device, ensure it isn't already locked */
+
+      if (isafs || ((status = alt_file_locked (fd)) >= 0))
+    9600:	e0bffb17 	ldw	r2,-20(fp)
+    9604:	1000051e 	bne	r2,zero,961c <open+0xd8>
+    9608:	e13ffc17 	ldw	r4,-16(fp)
+    960c:	00094580 	call	9458 <alt_file_locked>
+    9610:	e0bffa15 	stw	r2,-24(fp)
+    9614:	e0bffa17 	ldw	r2,-24(fp)
+    9618:	10001016 	blt	r2,zero,965c <open+0x118>
+        /* 
+         * If the device or filesystem provides an open() callback function,
+         * call it now to perform any device/filesystem specific operations.
+         */
+    
+        status = (dev->open) ? dev->open(fd, file, flags, mode): 0;
+    961c:	e0bff817 	ldw	r2,-32(fp)
+    9620:	10800317 	ldw	r2,12(r2)
+    9624:	10000826 	beq	r2,zero,9648 <open+0x104>
+    9628:	e0bff817 	ldw	r2,-32(fp)
+    962c:	10800317 	ldw	r2,12(r2)
+    9630:	e1ffff17 	ldw	r7,-4(fp)
+    9634:	e1bffe17 	ldw	r6,-8(fp)
+    9638:	e17ffd17 	ldw	r5,-12(fp)
+    963c:	e13ffc17 	ldw	r4,-16(fp)
+    9640:	103ee83a 	callr	r2
+    9644:	00000106 	br	964c <open+0x108>
+    9648:	0005883a 	mov	r2,zero
+    964c:	e0bffa15 	stw	r2,-24(fp)
+    9650:	00000206 	br	965c <open+0x118>
+      }
+    }
+  }
+  else
+  {
+    status = -ENODEV;
+    9654:	00bffb44 	movi	r2,-19
+    9658:	e0bffa15 	stw	r2,-24(fp)
+  }
+
+  /* Allocation failed, so clean up and return an error */ 
+
+  if (status < 0)
+    965c:	e0bffa17 	ldw	r2,-24(fp)
+    9660:	1000090e 	bge	r2,zero,9688 <open+0x144>
+  {
+    alt_release_fd (index);  
+    9664:	e13ff917 	ldw	r4,-28(fp)
+    9668:	00096a00 	call	96a0 <alt_release_fd>
+    ALT_ERRNO = -status;
+    966c:	000941c0 	call	941c <alt_get_errno>
+    9670:	1007883a 	mov	r3,r2
+    9674:	e0bffa17 	ldw	r2,-24(fp)
+    9678:	0085c83a 	sub	r2,zero,r2
+    967c:	18800015 	stw	r2,0(r3)
+    return -1;
+    9680:	00bfffc4 	movi	r2,-1
+    9684:	00000106 	br	968c <open+0x148>
+  }
+  
+  /* return the reference upon success */
+
+  return index;
+    9688:	e0bff917 	ldw	r2,-28(fp)
+}
+    968c:	e037883a 	mov	sp,fp
+    9690:	dfc00117 	ldw	ra,4(sp)
+    9694:	df000017 	ldw	fp,0(sp)
+    9698:	dec00204 	addi	sp,sp,8
+    969c:	f800283a 	ret
+
+000096a0 <alt_release_fd>:
+ * File descriptors correcponding to standard in, standard out and standard 
+ * error cannont be released backed to the pool. They are always reserved.
+ */
+
+void alt_release_fd (int fd)
+{
+    96a0:	defffc04 	addi	sp,sp,-16
+    96a4:	dfc00315 	stw	ra,12(sp)
+    96a8:	df000215 	stw	fp,8(sp)
+    96ac:	dc000115 	stw	r16,4(sp)
+    96b0:	df000204 	addi	fp,sp,8
+    96b4:	e13ffe15 	stw	r4,-8(fp)
+  if (fd > 2)
+    96b8:	e0bffe17 	ldw	r2,-8(fp)
+    96bc:	108000d0 	cmplti	r2,r2,3
+    96c0:	1000111e 	bne	r2,zero,9708 <alt_release_fd+0x68>
+  {
+    alt_fd_list[fd].fd_flags = 0;
+    96c4:	04000074 	movhi	r16,1
+    96c8:	8427a804 	addi	r16,r16,-24928
+    96cc:	e0bffe17 	ldw	r2,-8(fp)
+    96d0:	01400304 	movi	r5,12
+    96d4:	1009883a 	mov	r4,r2
+    96d8:	00089f00 	call	89f0 <__mulsi3>
+    96dc:	8085883a 	add	r2,r16,r2
+    96e0:	10800204 	addi	r2,r2,8
+    96e4:	10000015 	stw	zero,0(r2)
+    alt_fd_list[fd].dev      = 0;
+    96e8:	04000074 	movhi	r16,1
+    96ec:	8427a804 	addi	r16,r16,-24928
+    96f0:	e0bffe17 	ldw	r2,-8(fp)
+    96f4:	01400304 	movi	r5,12
+    96f8:	1009883a 	mov	r4,r2
+    96fc:	00089f00 	call	89f0 <__mulsi3>
+    9700:	8085883a 	add	r2,r16,r2
+    9704:	10000015 	stw	zero,0(r2)
+  }
+}
+    9708:	0001883a 	nop
+    970c:	e6ffff04 	addi	sp,fp,-4
+    9710:	dfc00217 	ldw	ra,8(sp)
+    9714:	df000117 	ldw	fp,4(sp)
+    9718:	dc000017 	ldw	r16,0(sp)
+    971c:	dec00304 	addi	sp,sp,12
+    9720:	f800283a 	ret
+
+00009724 <altera_nios2_gen2_irq_init>:
+/*
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_gen2_irq_init(void) 
+{
+    9724:	deffff04 	addi	sp,sp,-4
+    9728:	df000015 	stw	fp,0(sp)
+    972c:	d839883a 	mov	fp,sp
+    NIOS2_WRITE_IENABLE(0);
+    9730:	000170fa 	wrctl	ienable,zero
+}
+    9734:	0001883a 	nop
+    9738:	e037883a 	mov	sp,fp
+    973c:	df000017 	ldw	fp,0(sp)
+    9740:	dec00104 	addi	sp,sp,4
+    9744:	f800283a 	ret
+
+00009748 <alt_find_dev>:
+ * "name" must be an exact match for the devices registered name for a match to
+ * be found.
+ */
+ 
+alt_dev* alt_find_dev(const char* name, alt_llist* llist)
+{
+    9748:	defffa04 	addi	sp,sp,-24
+    974c:	dfc00515 	stw	ra,20(sp)
+    9750:	df000415 	stw	fp,16(sp)
+    9754:	df000404 	addi	fp,sp,16
+    9758:	e13ffe15 	stw	r4,-8(fp)
+    975c:	e17fff15 	stw	r5,-4(fp)
+  alt_dev* next = (alt_dev*) llist->next;
+    9760:	e0bfff17 	ldw	r2,-4(fp)
+    9764:	10800017 	ldw	r2,0(r2)
+    9768:	e0bffc15 	stw	r2,-16(fp)
+  alt_32 len;
+
+  len  = strlen(name) + 1;
+    976c:	e13ffe17 	ldw	r4,-8(fp)
+    9770:	00087c80 	call	87c8 <strlen>
+    9774:	10800044 	addi	r2,r2,1
+    9778:	e0bffd15 	stw	r2,-12(fp)
+  /*
+   * Check each list entry in turn, until a match is found, or we reach the
+   * end of the list (i.e. next winds up pointing back to the list head).
+   */ 
+
+  while (next != (alt_dev*) llist)
+    977c:	00000d06 	br	97b4 <alt_find_dev+0x6c>
+    /* 
+     * memcmp() is used here rather than strcmp() in order to reduce the size
+     * of the executable.
+     */
+
+    if (!memcmp (next->name, name, len))
+    9780:	e0bffc17 	ldw	r2,-16(fp)
+    9784:	10800217 	ldw	r2,8(r2)
+    9788:	e0fffd17 	ldw	r3,-12(fp)
+    978c:	180d883a 	mov	r6,r3
+    9790:	e17ffe17 	ldw	r5,-8(fp)
+    9794:	1009883a 	mov	r4,r2
+    9798:	00099d80 	call	99d8 <memcmp>
+    979c:	1000021e 	bne	r2,zero,97a8 <alt_find_dev+0x60>
+    {
+      /* match found */
+
+      return next;
+    97a0:	e0bffc17 	ldw	r2,-16(fp)
+    97a4:	00000706 	br	97c4 <alt_find_dev+0x7c>
+    }
+    next = (alt_dev*) next->llist.next;
+    97a8:	e0bffc17 	ldw	r2,-16(fp)
+    97ac:	10800017 	ldw	r2,0(r2)
+    97b0:	e0bffc15 	stw	r2,-16(fp)
+  /*
+   * Check each list entry in turn, until a match is found, or we reach the
+   * end of the list (i.e. next winds up pointing back to the list head).
+   */ 
+
+  while (next != (alt_dev*) llist)
+    97b4:	e0fffc17 	ldw	r3,-16(fp)
+    97b8:	e0bfff17 	ldw	r2,-4(fp)
+    97bc:	18bff01e 	bne	r3,r2,9780 <_gp+0xffff7760>
+    next = (alt_dev*) next->llist.next;
+  }
+  
+  /* No match found */
+  
+  return NULL;
+    97c0:	0005883a 	mov	r2,zero
+}
+    97c4:	e037883a 	mov	sp,fp
+    97c8:	dfc00117 	ldw	ra,4(sp)
+    97cc:	df000017 	ldw	fp,0(sp)
+    97d0:	dec00204 	addi	sp,sp,8
+    97d4:	f800283a 	ret
+
+000097d8 <alt_find_file>:
+ * either '/' or '\0' is the prefix of the filename. For example the filename:
+ * "/myfilesystem/junk.txt" would match: "/myfilesystem", but not: "/myfile". 
+ */
+ 
+alt_dev* alt_find_file (const char* name)
+{
+    97d8:	defffb04 	addi	sp,sp,-20
+    97dc:	dfc00415 	stw	ra,16(sp)
+    97e0:	df000315 	stw	fp,12(sp)
+    97e4:	df000304 	addi	fp,sp,12
+    97e8:	e13fff15 	stw	r4,-4(fp)
+  alt_dev* next = (alt_dev*) alt_fs_list.next;   
+    97ec:	d0a00217 	ldw	r2,-32760(gp)
+    97f0:	e0bffd15 	stw	r2,-12(fp)
+  /*
+   * Check each list entry in turn, until a match is found, or we reach the
+   * end of the list (i.e. next winds up pointing back to the list head).
+   */ 
+ 
+  while (next != (alt_dev*) &alt_fs_list)
+    97f4:	00003106 	br	98bc <alt_find_file+0xe4>
+  {
+    len = strlen(next->name);
+    97f8:	e0bffd17 	ldw	r2,-12(fp)
+    97fc:	10800217 	ldw	r2,8(r2)
+    9800:	1009883a 	mov	r4,r2
+    9804:	00087c80 	call	87c8 <strlen>
+    9808:	e0bffe15 	stw	r2,-8(fp)
+    
+    if (next->name[len-1] == '/')
+    980c:	e0bffd17 	ldw	r2,-12(fp)
+    9810:	10c00217 	ldw	r3,8(r2)
+    9814:	e0bffe17 	ldw	r2,-8(fp)
+    9818:	10bfffc4 	addi	r2,r2,-1
+    981c:	1885883a 	add	r2,r3,r2
+    9820:	10800003 	ldbu	r2,0(r2)
+    9824:	10803fcc 	andi	r2,r2,255
+    9828:	1080201c 	xori	r2,r2,128
+    982c:	10bfe004 	addi	r2,r2,-128
+    9830:	10800bd8 	cmpnei	r2,r2,47
+    9834:	1000031e 	bne	r2,zero,9844 <alt_find_file+0x6c>
+    {
+      len -= 1;
+    9838:	e0bffe17 	ldw	r2,-8(fp)
+    983c:	10bfffc4 	addi	r2,r2,-1
+    9840:	e0bffe15 	stw	r2,-8(fp)
+    }
+
+    if (((name[len] == '/') || (name[len] == '\0')) && 
+    9844:	e0bffe17 	ldw	r2,-8(fp)
+    9848:	e0ffff17 	ldw	r3,-4(fp)
+    984c:	1885883a 	add	r2,r3,r2
+    9850:	10800003 	ldbu	r2,0(r2)
+    9854:	10803fcc 	andi	r2,r2,255
+    9858:	1080201c 	xori	r2,r2,128
+    985c:	10bfe004 	addi	r2,r2,-128
+    9860:	10800be0 	cmpeqi	r2,r2,47
+    9864:	1000081e 	bne	r2,zero,9888 <alt_find_file+0xb0>
+    9868:	e0bffe17 	ldw	r2,-8(fp)
+    986c:	e0ffff17 	ldw	r3,-4(fp)
+    9870:	1885883a 	add	r2,r3,r2
+    9874:	10800003 	ldbu	r2,0(r2)
+    9878:	10803fcc 	andi	r2,r2,255
+    987c:	1080201c 	xori	r2,r2,128
+    9880:	10bfe004 	addi	r2,r2,-128
+    9884:	10000a1e 	bne	r2,zero,98b0 <alt_find_file+0xd8>
+        !memcmp (next->name, name, len))
+    9888:	e0bffd17 	ldw	r2,-12(fp)
+    988c:	10800217 	ldw	r2,8(r2)
+    9890:	e0fffe17 	ldw	r3,-8(fp)
+    9894:	180d883a 	mov	r6,r3
+    9898:	e17fff17 	ldw	r5,-4(fp)
+    989c:	1009883a 	mov	r4,r2
+    98a0:	00099d80 	call	99d8 <memcmp>
+    if (next->name[len-1] == '/')
+    {
+      len -= 1;
+    }
+
+    if (((name[len] == '/') || (name[len] == '\0')) && 
+    98a4:	1000021e 	bne	r2,zero,98b0 <alt_find_file+0xd8>
+        !memcmp (next->name, name, len))
+    {
+      /* match found */
+
+      return next;
+    98a8:	e0bffd17 	ldw	r2,-12(fp)
+    98ac:	00000706 	br	98cc <alt_find_file+0xf4>
+    }
+    next = (alt_dev*) next->llist.next;
+    98b0:	e0bffd17 	ldw	r2,-12(fp)
+    98b4:	10800017 	ldw	r2,0(r2)
+    98b8:	e0bffd15 	stw	r2,-12(fp)
+  /*
+   * Check each list entry in turn, until a match is found, or we reach the
+   * end of the list (i.e. next winds up pointing back to the list head).
+   */ 
+ 
+  while (next != (alt_dev*) &alt_fs_list)
+    98bc:	e0fffd17 	ldw	r3,-12(fp)
+    98c0:	d0a00204 	addi	r2,gp,-32760
+    98c4:	18bfcc1e 	bne	r3,r2,97f8 <_gp+0xffff77d8>
+    next = (alt_dev*) next->llist.next;
+  }
+  
+  /* No match found */
+  
+  return NULL;     
+    98c8:	0005883a 	mov	r2,zero
+}
+    98cc:	e037883a 	mov	sp,fp
+    98d0:	dfc00117 	ldw	ra,4(sp)
+    98d4:	df000017 	ldw	fp,0(sp)
+    98d8:	dec00204 	addi	sp,sp,8
+    98dc:	f800283a 	ret
+
+000098e0 <alt_get_fd>:
+ * the offset of the file descriptor within the file descriptor array). A
+ * negative value indicates failure.
+ */
+
+int alt_get_fd (alt_dev* dev)
+{
+    98e0:	defffa04 	addi	sp,sp,-24
+    98e4:	dfc00515 	stw	ra,20(sp)
+    98e8:	df000415 	stw	fp,16(sp)
+    98ec:	dc000315 	stw	r16,12(sp)
+    98f0:	df000404 	addi	fp,sp,16
+    98f4:	e13ffe15 	stw	r4,-8(fp)
+  alt_32 i;
+  int rc = -EMFILE;
+    98f8:	00bffa04 	movi	r2,-24
+    98fc:	e0bffd15 	stw	r2,-12(fp)
+   * indicates the highest file descriptor ever allocated. This is used to
+   * improve efficency when searching the file descriptor list, and 
+   * therefore reduce contention on the alt_fd_list_lock semaphore. 
+   */
+
+  for (i = 0; i < ALT_MAX_FD; i++)
+    9900:	e03ffc15 	stw	zero,-16(fp)
+    9904:	00001d06 	br	997c <alt_get_fd+0x9c>
+  {
+    if (!alt_fd_list[i].dev)
+    9908:	04000074 	movhi	r16,1
+    990c:	8427a804 	addi	r16,r16,-24928
+    9910:	e0bffc17 	ldw	r2,-16(fp)
+    9914:	01400304 	movi	r5,12
+    9918:	1009883a 	mov	r4,r2
+    991c:	00089f00 	call	89f0 <__mulsi3>
+    9920:	8085883a 	add	r2,r16,r2
+    9924:	10800017 	ldw	r2,0(r2)
+    9928:	1000111e 	bne	r2,zero,9970 <alt_get_fd+0x90>
+    {
+      alt_fd_list[i].dev = dev;
+    992c:	04000074 	movhi	r16,1
+    9930:	8427a804 	addi	r16,r16,-24928
+    9934:	e0bffc17 	ldw	r2,-16(fp)
+    9938:	01400304 	movi	r5,12
+    993c:	1009883a 	mov	r4,r2
+    9940:	00089f00 	call	89f0 <__mulsi3>
+    9944:	8085883a 	add	r2,r16,r2
+    9948:	e0fffe17 	ldw	r3,-8(fp)
+    994c:	10c00015 	stw	r3,0(r2)
+      if (i > alt_max_fd)
+    9950:	d0e00617 	ldw	r3,-32744(gp)
+    9954:	e0bffc17 	ldw	r2,-16(fp)
+    9958:	1880020e 	bge	r3,r2,9964 <alt_get_fd+0x84>
+      {
+        alt_max_fd = i;
+    995c:	e0bffc17 	ldw	r2,-16(fp)
+    9960:	d0a00615 	stw	r2,-32744(gp)
+      }
+      rc = i;
+    9964:	e0bffc17 	ldw	r2,-16(fp)
+    9968:	e0bffd15 	stw	r2,-12(fp)
+      goto alt_get_fd_exit;
+    996c:	00000606 	br	9988 <alt_get_fd+0xa8>
+   * indicates the highest file descriptor ever allocated. This is used to
+   * improve efficency when searching the file descriptor list, and 
+   * therefore reduce contention on the alt_fd_list_lock semaphore. 
+   */
+
+  for (i = 0; i < ALT_MAX_FD; i++)
+    9970:	e0bffc17 	ldw	r2,-16(fp)
+    9974:	10800044 	addi	r2,r2,1
+    9978:	e0bffc15 	stw	r2,-16(fp)
+    997c:	e0bffc17 	ldw	r2,-16(fp)
+    9980:	10800810 	cmplti	r2,r2,32
+    9984:	103fe01e 	bne	r2,zero,9908 <_gp+0xffff78e8>
+   * file descriptor pool.
+   */
+
+  ALT_SEM_POST(alt_fd_list_lock);
+
+  return rc;
+    9988:	e0bffd17 	ldw	r2,-12(fp)
+}
+    998c:	e6ffff04 	addi	sp,fp,-4
+    9990:	dfc00217 	ldw	ra,8(sp)
+    9994:	df000117 	ldw	fp,4(sp)
+    9998:	dc000017 	ldw	r16,0(sp)
+    999c:	dec00304 	addi	sp,sp,12
+    99a0:	f800283a 	ret
+
+000099a4 <atexit>:
+    99a4:	200b883a 	mov	r5,r4
+    99a8:	000f883a 	mov	r7,zero
+    99ac:	000d883a 	mov	r6,zero
+    99b0:	0009883a 	mov	r4,zero
+    99b4:	0009a081 	jmpi	9a08 <__register_exitproc>
+
+000099b8 <exit>:
+    99b8:	defffe04 	addi	sp,sp,-8
+    99bc:	000b883a 	mov	r5,zero
+    99c0:	dc000015 	stw	r16,0(sp)
+    99c4:	dfc00115 	stw	ra,4(sp)
+    99c8:	2021883a 	mov	r16,r4
+    99cc:	0009b600 	call	9b60 <__call_exitprocs>
+    99d0:	8009883a 	mov	r4,r16
+    99d4:	0009cf00 	call	9cf0 <_exit>
+
+000099d8 <memcmp>:
+    99d8:	218d883a 	add	r6,r4,r6
+    99dc:	21800826 	beq	r4,r6,9a00 <memcmp+0x28>
+    99e0:	20800003 	ldbu	r2,0(r4)
+    99e4:	28c00003 	ldbu	r3,0(r5)
+    99e8:	10c00226 	beq	r2,r3,99f4 <memcmp+0x1c>
+    99ec:	10c5c83a 	sub	r2,r2,r3
+    99f0:	f800283a 	ret
+    99f4:	21000044 	addi	r4,r4,1
+    99f8:	29400044 	addi	r5,r5,1
+    99fc:	003ff706 	br	99dc <_gp+0xffff79bc>
+    9a00:	0005883a 	mov	r2,zero
+    9a04:	f800283a 	ret
+
+00009a08 <__register_exitproc>:
+    9a08:	00800074 	movhi	r2,1
+    9a0c:	10a80804 	addi	r2,r2,-24544
+    9a10:	10c00017 	ldw	r3,0(r2)
+    9a14:	defff904 	addi	sp,sp,-28
+    9a18:	dc000015 	stw	r16,0(sp)
+    9a1c:	1c000c17 	ldw	r16,48(r3)
+    9a20:	dd400515 	stw	r21,20(sp)
+    9a24:	dd000415 	stw	r20,16(sp)
+    9a28:	dcc00315 	stw	r19,12(sp)
+    9a2c:	dc800215 	stw	r18,8(sp)
+    9a30:	dc400115 	stw	r17,4(sp)
+    9a34:	dfc00615 	stw	ra,24(sp)
+    9a38:	202b883a 	mov	r21,r4
+    9a3c:	2823883a 	mov	r17,r5
+    9a40:	3027883a 	mov	r19,r6
+    9a44:	3825883a 	mov	r18,r7
+    9a48:	1029883a 	mov	r20,r2
+    9a4c:	8000021e 	bne	r16,zero,9a58 <__register_exitproc+0x50>
+    9a50:	1c000d04 	addi	r16,r3,52
+    9a54:	1c000c15 	stw	r16,48(r3)
+    9a58:	80800117 	ldw	r2,4(r16)
+    9a5c:	00c007c4 	movi	r3,31
+    9a60:	1880110e 	bge	r3,r2,9aa8 <__register_exitproc+0xa0>
+    9a64:	00800034 	movhi	r2,0
+    9a68:	10800004 	addi	r2,r2,0
+    9a6c:	1000021e 	bne	r2,zero,9a78 <__register_exitproc+0x70>
+    9a70:	00bfffc4 	movi	r2,-1
+    9a74:	00003106 	br	9b3c <__register_exitproc+0x134>
+    9a78:	01002304 	movi	r4,140
+    9a7c:	00000000 	call	0 <__alt_mem_onchip_memory2_0-0x8000>
+    9a80:	1021883a 	mov	r16,r2
+    9a84:	103ffa26 	beq	r2,zero,9a70 <_gp+0xffff7a50>
+    9a88:	10000115 	stw	zero,4(r2)
+    9a8c:	a0800017 	ldw	r2,0(r20)
+    9a90:	10c00c17 	ldw	r3,48(r2)
+    9a94:	80c00015 	stw	r3,0(r16)
+    9a98:	14000c15 	stw	r16,48(r2)
+    9a9c:	80002215 	stw	zero,136(r16)
+    9aa0:	a8001d26 	beq	r21,zero,9b18 <__register_exitproc+0x110>
+    9aa4:	00000606 	br	9ac0 <__register_exitproc+0xb8>
+    9aa8:	a8001b26 	beq	r21,zero,9b18 <__register_exitproc+0x110>
+    9aac:	80802217 	ldw	r2,136(r16)
+    9ab0:	1000091e 	bne	r2,zero,9ad8 <__register_exitproc+0xd0>
+    9ab4:	00800034 	movhi	r2,0
+    9ab8:	10800004 	addi	r2,r2,0
+    9abc:	103fec26 	beq	r2,zero,9a70 <_gp+0xffff7a50>
+    9ac0:	01004204 	movi	r4,264
+    9ac4:	00000000 	call	0 <__alt_mem_onchip_memory2_0-0x8000>
+    9ac8:	103fe926 	beq	r2,zero,9a70 <_gp+0xffff7a50>
+    9acc:	10004015 	stw	zero,256(r2)
+    9ad0:	10004115 	stw	zero,260(r2)
+    9ad4:	80802215 	stw	r2,136(r16)
+    9ad8:	81400117 	ldw	r5,4(r16)
+    9adc:	01000044 	movi	r4,1
+    9ae0:	2947883a 	add	r3,r5,r5
+    9ae4:	18c7883a 	add	r3,r3,r3
+    9ae8:	10c7883a 	add	r3,r2,r3
+    9aec:	1cc00015 	stw	r19,0(r3)
+    9af0:	2148983a 	sll	r4,r4,r5
+    9af4:	11404017 	ldw	r5,256(r2)
+    9af8:	290ab03a 	or	r5,r5,r4
+    9afc:	11404015 	stw	r5,256(r2)
+    9b00:	1c802015 	stw	r18,128(r3)
+    9b04:	00c00084 	movi	r3,2
+    9b08:	a8c0031e 	bne	r21,r3,9b18 <__register_exitproc+0x110>
+    9b0c:	10c04117 	ldw	r3,260(r2)
+    9b10:	1908b03a 	or	r4,r3,r4
+    9b14:	11004115 	stw	r4,260(r2)
+    9b18:	80800117 	ldw	r2,4(r16)
+    9b1c:	10c00044 	addi	r3,r2,1
+    9b20:	10800084 	addi	r2,r2,2
+    9b24:	1085883a 	add	r2,r2,r2
+    9b28:	1085883a 	add	r2,r2,r2
+    9b2c:	80c00115 	stw	r3,4(r16)
+    9b30:	80a1883a 	add	r16,r16,r2
+    9b34:	84400015 	stw	r17,0(r16)
+    9b38:	0005883a 	mov	r2,zero
+    9b3c:	dfc00617 	ldw	ra,24(sp)
+    9b40:	dd400517 	ldw	r21,20(sp)
+    9b44:	dd000417 	ldw	r20,16(sp)
+    9b48:	dcc00317 	ldw	r19,12(sp)
+    9b4c:	dc800217 	ldw	r18,8(sp)
+    9b50:	dc400117 	ldw	r17,4(sp)
+    9b54:	dc000017 	ldw	r16,0(sp)
+    9b58:	dec00704 	addi	sp,sp,28
+    9b5c:	f800283a 	ret
+
+00009b60 <__call_exitprocs>:
+    9b60:	defff504 	addi	sp,sp,-44
+    9b64:	dd000515 	stw	r20,20(sp)
+    9b68:	05000074 	movhi	r20,1
+    9b6c:	dc800315 	stw	r18,12(sp)
+    9b70:	dfc00a15 	stw	ra,40(sp)
+    9b74:	df000915 	stw	fp,36(sp)
+    9b78:	ddc00815 	stw	r23,32(sp)
+    9b7c:	dd800715 	stw	r22,28(sp)
+    9b80:	dd400615 	stw	r21,24(sp)
+    9b84:	dcc00415 	stw	r19,16(sp)
+    9b88:	dc400215 	stw	r17,8(sp)
+    9b8c:	dc000115 	stw	r16,4(sp)
+    9b90:	d9000015 	stw	r4,0(sp)
+    9b94:	2825883a 	mov	r18,r5
+    9b98:	a5280804 	addi	r20,r20,-24544
+    9b9c:	a4400017 	ldw	r17,0(r20)
+    9ba0:	8cc00c17 	ldw	r19,48(r17)
+    9ba4:	8c400c04 	addi	r17,r17,48
+    9ba8:	98004526 	beq	r19,zero,9cc0 <__call_exitprocs+0x160>
+    9bac:	9c000117 	ldw	r16,4(r19)
+    9bb0:	00900034 	movhi	r2,16384
+    9bb4:	10bfffc4 	addi	r2,r2,-1
+    9bb8:	9d402217 	ldw	r21,136(r19)
+    9bbc:	85bfffc4 	addi	r22,r16,-1
+    9bc0:	80a1883a 	add	r16,r16,r2
+    9bc4:	8421883a 	add	r16,r16,r16
+    9bc8:	8421883a 	add	r16,r16,r16
+    9bcc:	ac2f883a 	add	r23,r21,r16
+    9bd0:	84000204 	addi	r16,r16,8
+    9bd4:	9c21883a 	add	r16,r19,r16
+    9bd8:	b0002716 	blt	r22,zero,9c78 <__call_exitprocs+0x118>
+    9bdc:	90000726 	beq	r18,zero,9bfc <__call_exitprocs+0x9c>
+    9be0:	a800041e 	bne	r21,zero,9bf4 <__call_exitprocs+0x94>
+    9be4:	b5bfffc4 	addi	r22,r22,-1
+    9be8:	bdffff04 	addi	r23,r23,-4
+    9bec:	843fff04 	addi	r16,r16,-4
+    9bf0:	003ff906 	br	9bd8 <_gp+0xffff7bb8>
+    9bf4:	b9002017 	ldw	r4,128(r23)
+    9bf8:	913ffa1e 	bne	r18,r4,9be4 <_gp+0xffff7bc4>
+    9bfc:	99000117 	ldw	r4,4(r19)
+    9c00:	82000017 	ldw	r8,0(r16)
+    9c04:	213fffc4 	addi	r4,r4,-1
+    9c08:	b100021e 	bne	r22,r4,9c14 <__call_exitprocs+0xb4>
+    9c0c:	9d800115 	stw	r22,4(r19)
+    9c10:	00000106 	br	9c18 <__call_exitprocs+0xb8>
+    9c14:	80000015 	stw	zero,0(r16)
+    9c18:	403ff226 	beq	r8,zero,9be4 <_gp+0xffff7bc4>
+    9c1c:	9f000117 	ldw	fp,4(r19)
+    9c20:	a8000526 	beq	r21,zero,9c38 <__call_exitprocs+0xd8>
+    9c24:	00800044 	movi	r2,1
+    9c28:	1592983a 	sll	r9,r2,r22
+    9c2c:	a9404017 	ldw	r5,256(r21)
+    9c30:	494a703a 	and	r5,r9,r5
+    9c34:	2800021e 	bne	r5,zero,9c40 <__call_exitprocs+0xe0>
+    9c38:	403ee83a 	callr	r8
+    9c3c:	00000906 	br	9c64 <__call_exitprocs+0x104>
+    9c40:	a9004117 	ldw	r4,260(r21)
+    9c44:	4908703a 	and	r4,r9,r4
+    9c48:	2000041e 	bne	r4,zero,9c5c <__call_exitprocs+0xfc>
+    9c4c:	b9400017 	ldw	r5,0(r23)
+    9c50:	d9000017 	ldw	r4,0(sp)
+    9c54:	403ee83a 	callr	r8
+    9c58:	00000206 	br	9c64 <__call_exitprocs+0x104>
+    9c5c:	b9000017 	ldw	r4,0(r23)
+    9c60:	403ee83a 	callr	r8
+    9c64:	99000117 	ldw	r4,4(r19)
+    9c68:	e13fcc1e 	bne	fp,r4,9b9c <_gp+0xffff7b7c>
+    9c6c:	89000017 	ldw	r4,0(r17)
+    9c70:	993fdc26 	beq	r19,r4,9be4 <_gp+0xffff7bc4>
+    9c74:	003fc906 	br	9b9c <_gp+0xffff7b7c>
+    9c78:	00800034 	movhi	r2,0
+    9c7c:	10800004 	addi	r2,r2,0
+    9c80:	10000f26 	beq	r2,zero,9cc0 <__call_exitprocs+0x160>
+    9c84:	99400117 	ldw	r5,4(r19)
+    9c88:	99000017 	ldw	r4,0(r19)
+    9c8c:	2800091e 	bne	r5,zero,9cb4 <__call_exitprocs+0x154>
+    9c90:	20000826 	beq	r4,zero,9cb4 <__call_exitprocs+0x154>
+    9c94:	89000015 	stw	r4,0(r17)
+    9c98:	a8000226 	beq	r21,zero,9ca4 <__call_exitprocs+0x144>
+    9c9c:	a809883a 	mov	r4,r21
+    9ca0:	00000000 	call	0 <__alt_mem_onchip_memory2_0-0x8000>
+    9ca4:	9809883a 	mov	r4,r19
+    9ca8:	00000000 	call	0 <__alt_mem_onchip_memory2_0-0x8000>
+    9cac:	8cc00017 	ldw	r19,0(r17)
+    9cb0:	003fbd06 	br	9ba8 <_gp+0xffff7b88>
+    9cb4:	9823883a 	mov	r17,r19
+    9cb8:	2027883a 	mov	r19,r4
+    9cbc:	003fba06 	br	9ba8 <_gp+0xffff7b88>
+    9cc0:	dfc00a17 	ldw	ra,40(sp)
+    9cc4:	df000917 	ldw	fp,36(sp)
+    9cc8:	ddc00817 	ldw	r23,32(sp)
+    9ccc:	dd800717 	ldw	r22,28(sp)
+    9cd0:	dd400617 	ldw	r21,24(sp)
+    9cd4:	dd000517 	ldw	r20,20(sp)
+    9cd8:	dcc00417 	ldw	r19,16(sp)
+    9cdc:	dc800317 	ldw	r18,12(sp)
+    9ce0:	dc400217 	ldw	r17,8(sp)
+    9ce4:	dc000117 	ldw	r16,4(sp)
+    9ce8:	dec00b04 	addi	sp,sp,44
+    9cec:	f800283a 	ret
+
+00009cf0 <_exit>:
+ *
+ * ALT_EXIT is mapped onto the _exit() system call in alt_syscall.h
+ */
+
+void ALT_EXIT (int exit_code)
+{
+    9cf0:	defffd04 	addi	sp,sp,-12
+    9cf4:	df000215 	stw	fp,8(sp)
+    9cf8:	df000204 	addi	fp,sp,8
+    9cfc:	e13fff15 	stw	r4,-4(fp)
+  ALT_LOG_PRINT_BOOT("[alt_exit.c] Entering _exit() function.\r\n");
+  ALT_LOG_PRINT_BOOT("[alt_exit.c] Exit code from main was %d.\r\n",exit_code);
+  /* Stop all other threads */
+
+  ALT_LOG_PRINT_BOOT("[alt_exit.c] Calling ALT_OS_STOP().\r\n");
+  ALT_OS_STOP();
+    9d00:	0001883a 	nop
+    9d04:	e0bfff17 	ldw	r2,-4(fp)
+    9d08:	e0bffe15 	stw	r2,-8(fp)
+/*
+ * Routine called on exit.
+ */
+static ALT_INLINE ALT_ALWAYS_INLINE void alt_sim_halt(int exit_code)
+{
+  register int r2 asm ("r2") = exit_code;
+    9d0c:	e0bffe17 	ldw	r2,-8(fp)
+  __asm__ volatile ("\n0:\n\taddi %0,%0, -1\n\tbgt %0,zero,0b" : : "r" (ALT_CPU_FREQ/100) ); /* Delay for >30ms */
+
+  __asm__ volatile ("break 2" : : "r"(r2), "r"(r3) ALT_GMON_DATA );
+
+#else /* !DEBUG_STUB */
+  if (r2) {
+    9d10:	10000226 	beq	r2,zero,9d1c <_exit+0x2c>
+    ALT_SIM_FAIL();
+    9d14:	002af070 	cmpltui	zero,zero,43969
+    9d18:	00000106 	br	9d20 <_exit+0x30>
+  } else {
+    ALT_SIM_PASS();
+    9d1c:	002af0b0 	cmpltui	zero,zero,43970
+  ALT_SIM_HALT(exit_code);
+
+  /* spin forever, since there's no where to go back to */
+
+  ALT_LOG_PRINT_BOOT("[alt_exit.c] Spinning forever.\r\n");
+  while (1);
+    9d20:	003fff06 	br	9d20 <_gp+0xffff7d00>

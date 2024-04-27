@@ -1,0 +1,21 @@
+#include "system.h"
+#include "sys/alt_stdio.h"
+
+int main()
+{
+  int b_arr [9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+  int x_arr [9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+  int s = 0;
+  int* c_ptr = (int*)FIR_0_BASE;
+
+  for (int i = 0; i < 9; i++) {
+	  *(c_ptr + 2) = 0;
+	  *(c_ptr + 0) = b_arr[i];
+	  *(c_ptr + 2) = 1;
+	  *(c_ptr + 1) = x_arr[i];
+  }
+
+  s = *(c_ptr + 1);
+  printf("done");
+  return 0;
+}

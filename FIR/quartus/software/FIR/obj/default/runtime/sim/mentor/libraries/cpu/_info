@@ -1,0 +1,535 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/THSoC/fir/quartus/software/FIR/obj/default/runtime/sim/mentor
+vsystem_nios2_gen2_0_cpu
+Z1 !s110 1705141999
+!i10b 1
+!s100 Ook0@AWBSZlglh0kCM8EY3
+I0_>FTo:<9HnPZ:iSKHh4<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1705130169
+Z4 8E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu.v
+Z5 FE:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu.v
+L0 2834
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1705141998.000000
+Z8 !s107 E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu.v|
+Z9 !s90 -reportprogress|300|E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu.v|-work|cpu|
+!i113 1
+Z10 o-work cpu
+Z11 tCvgOpt 0
+vsystem_nios2_gen2_0_cpu_debug_slave_sysclk
+R1
+!i10b 1
+!s100 TD0_bNe3fUJ[8WWMT>;RT0
+IN]21==B?@2`Z62:8Q6ck81
+R2
+R0
+R3
+8E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_sysclk.v
+FE:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_sysclk.v
+Z12 L0 21
+R6
+r1
+!s85 0
+31
+Z13 !s108 1705141999.000000
+!s107 E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_sysclk.v|-work|cpu|
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_debug_slave_tck
+R1
+!i10b 1
+!s100 Gmi6K9cOT]^k[82V^KK[A1
+IMX>i42j1SUZY9XHFK_Xd10
+R2
+R0
+R3
+8E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_tck.v
+FE:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_tck.v
+R12
+R6
+r1
+!s85 0
+31
+R13
+!s107 E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_tck.v|-work|cpu|
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_debug_slave_wrapper
+R1
+!i10b 1
+!s100 ?mW>2:9eR@Ne6hbJ3oP7]3
+IYQ2_6C8QUD6Y;_;@3]BL82
+R2
+R0
+R3
+8E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_wrapper.v
+FE:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_wrapper.v
+R12
+R6
+r1
+!s85 0
+31
+R13
+!s107 E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_debug_slave_wrapper.v|-work|cpu|
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_avalon_reg
+R1
+!i10b 1
+!s100 [PLU9Y3IH]iIXV3>DSQ@B2
+IUHOh;d4OUKN4j]Oo4YCGU0
+R2
+R0
+R3
+R4
+R5
+L0 2023
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci
+R1
+!i10b 1
+!s100 M7;Id:Zhj5DRem6kbBW8G3
+I`W=VF@E`jSaO@go[]FX;?1
+R2
+R0
+R3
+R4
+R5
+L0 2362
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_break
+Z14 !s110 1705141998
+!i10b 1
+!s100 gnKD>fhNJDiUGIS1XWU5L1
+I=]2;cK<gCiH9FC5iM[Hcl0
+R2
+R0
+R3
+R4
+R5
+L0 295
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+R1
+!i10b 1
+!s100 L5c_:AD;<Xo`nN`E33FS81
+I^h37EzRT<EBJX5^0ShmcF1
+R2
+R0
+R3
+R4
+R5
+L0 1265
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_dbrk
+R1
+!i10b 1
+!s100 V7Ug700C_NH@;QVcCHR6`1
+I@Tg;jFnfIdzcJmg7eaWK11
+R2
+R0
+R3
+R4
+R5
+L0 795
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_debug
+R14
+!i10b 1
+!s100 335i@gLTF8662DLLzRP3]1
+INWH]JFLN9X6<:@W2OZ[jZ3
+R2
+R0
+R3
+R4
+R5
+L0 153
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_dtrace
+R1
+!i10b 1
+!s100 P]XQ^KTd^@VCCmj>hShHf3
+IP^TkX`LO`HefER7XH`lg:3
+R2
+R0
+R3
+R4
+R5
+L0 1183
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_fifo
+R1
+!i10b 1
+!s100 7CT=b6]ef8cE:HHcBiHZ]2
+IDFnj2Z]KinoSG0jQSIC6m2
+R2
+R0
+R3
+R4
+R5
+L0 1427
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+R1
+!i10b 1
+!s100 P__1klCnX]bR=0GD:Wj=31
+IH3iHUN4gAEZiY?KJF1SQC0
+R2
+R0
+R3
+R4
+R5
+L0 1380
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+R1
+!i10b 1
+!s100 XonY=gK9XecOhdFSOlP_90
+Igc=]cCSchKa7X4<GWXfzg2
+R2
+R0
+R3
+R4
+R5
+L0 1337
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_im
+R1
+!i10b 1
+!s100 :5D>TV>J@fV2fAXfYFJU<0
+I?GYY@z_SPRgoP736Y7AGb1
+R2
+R0
+R3
+R4
+R5
+L0 1936
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_itrace
+R1
+!i10b 1
+!s100 H34O2lk8Z4S[3973@Wgc;2
+IOd0?h]JBFj=lSVg[SICBY1
+R2
+R0
+R3
+R4
+R5
+L0 982
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_pib
+R1
+!i10b 1
+!s100 l:Eb6`e5QlW17J[92TFb>0
+IXB67<FAmOaNKKb8kEd_aJ2
+R2
+R0
+R3
+R4
+R5
+L0 1913
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_td_mode
+R1
+!i10b 1
+!s100 8R^jU_:WKdU3<IeI6LgPU0
+IogG80bN9Vn>?25effoNK22
+R2
+R0
+R3
+R4
+R5
+L0 1115
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_oci_xbrk
+R14
+!i10b 1
+!s100 ]G4=g9WiKV=hXLn:0nkVN3
+IJBPF^dgb:5CBORzZDGj0c0
+R2
+R0
+R3
+R4
+R5
+L0 588
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_ocimem
+R1
+!i10b 1
+!s100 :[6P_^b=3=<=O]2M2FcGP1
+ISaXm6N1m>^Fm]meLN<za31
+R2
+R0
+R3
+R4
+R5
+L0 2181
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_nios2_performance_monitors
+R1
+!i10b 1
+!s100 E;SP1mk5P?X21_GEZzd?Y0
+IQOV;gR9P0j_GDjzXNPcEP3
+R2
+R0
+R3
+R4
+R5
+L0 2006
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_ociram_sp_ram_module
+R1
+!i10b 1
+!s100 dLU^5jbDj8OcQIE5_NHhd0
+I=kKAMJiPoe3]SN8M9[<HQ2
+R2
+R0
+R3
+R4
+R5
+L0 2116
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_register_bank_a_module
+R14
+!i10b 1
+!s100 PToRJT9C=hTj?@fhocZnZ1
+I@Y[HX5oX1T:2`N]o8W0[@2
+R2
+R0
+R3
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_register_bank_b_module
+R14
+!i10b 1
+!s100 oJPWPdOJ`W`oRm0E4N?5b3
+I=a1zbiTC;gGj@mIMAFAJi1
+R2
+R0
+R3
+R4
+R5
+L0 87
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsystem_nios2_gen2_0_cpu_test_bench
+R1
+!i10b 1
+!s100 RkQoKCaikBRVETdEc<<D:3
+IKKPA1:k6Nn0<z4<C68>i42
+R2
+R0
+R3
+8E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_test_bench.v
+FE:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_test_bench.v
+R12
+R6
+r1
+!s85 0
+31
+R13
+!s107 E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_test_bench.v|
+!s90 -reportprogress|300|E:/THSoC/fir/quartus/system/testbench/system_tb/simulation/submodules/system_nios2_gen2_0_cpu_test_bench.v|-work|cpu|
+!i113 1
+R10
+R11

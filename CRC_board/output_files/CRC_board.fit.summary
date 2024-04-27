@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Jan 19 23:05:44 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : CRC_board
+Top-level Entity Name : CRC_board
+Family : Cyclone V
+Device : 5CSXFC6D6F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 1,771 / 41,910 ( 4 % )
+Total registers : 4565
+Total pins : 2 / 499 ( < 1 % )
+Total virtual pins : 0
+Total block memory bits : 1,125,376 / 5,662,720 ( 20 % )
+Total RAM Blocks : 141 / 553 ( 25 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 0 / 15 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
